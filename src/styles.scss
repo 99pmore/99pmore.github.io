@@ -7,9 +7,12 @@
 }
 
 @font-face {
-    font-family: 'Aesthetic';
-    src: url("./assets/fonts/belgant-aesthetic.otf");
+    font-family: 'Allright';
+    src: url("./assets/fonts/Aesthetic.ttf");
     font-display: swap;
 }
 
-$font-title: 'Aesthetic', sans-serif;
+$font-title: 'Allright', sans-serif;
+
+$antique: #fff5e8;
+$tile: #9d432c;

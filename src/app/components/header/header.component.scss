@@ -1,8 +1,8 @@
+@import "../../../styles.scss";
+
 header {
-    font-family: 'Aesthetic';
-    font-size: 6em;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.webp) no-repeat center / cover;
-    color: #fff5e8;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.jpg) no-repeat center / cover;
+    color: $antique;
 
     height: 100vh;
     padding: 10%;
@@ -11,9 +11,47 @@ header {
     justify-content: center;
     align-items: center;
 
+    .open-tag, .close-tag {
+        font-family: 'Lucida Sans Typewriter', 'Lucida Console', 'monaco', 'Bitstream', monospace; 
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        color: $tile;
+
+        &::before {
+            content: '<';
+        }
+
+        &::after {
+            content: '>';
+        }
+    }
+
     .logo {
         position: absolute;
         top: 10%;
         right: 10%;
+    }
+
+    .name {
+        font-family: $font-title;
+
+        .title {
+            cursor: pointer;
+            padding: 40px 0 40px 60px;
+
+            p:first-child {
+                font-size: 12rem;
+            }
+    
+            p:last-child {
+                font-size: 4rem;
+            }
+    
+            span {
+                &:hover {
+                    color: $tile;
+                }
+            }
+        }
     }
 }
