@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.jpg) no-repeat center / cover;
+    color: $antique;
+
+    height: 100vh;
+    padding: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        .open-tag, .close-tag {
+            font-family: 'Lucida Sans Typewriter', 'Lucida Console', 'monaco', 'Bitstream', monospace; 
+            font-size: 1.5rem;
+            letter-spacing: 6px;
+            color: $tile;
+    
+            &::before {
+                content: '<';
+            }
+    
+            &::after {
+                content: '>';
+            }
+        }
+
+        .about-me {
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 40px 0 40px 60px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
