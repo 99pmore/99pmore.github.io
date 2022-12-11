@@ -5,3 +5,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: 'Aesthetic';
+    src: url("./assets/fonts/belgant-aesthetic.otf");
+    font-display: swap;
+}
+
+$font-title: 'Aesthetic', sans-serif;

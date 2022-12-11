@@ -1,0 +1,19 @@
+header {
+    font-family: 'Aesthetic';
+    font-size: 6em;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.webp) no-repeat center / cover;
+    color: #fff5e8;
+
+    height: 100vh;
+    padding: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+}
