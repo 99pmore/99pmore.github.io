@@ -1,0 +1,35 @@
+nav {
+    background-color: white;
+
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    z-index: 999;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        li {
+            transition: transform ease-in 0.25s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

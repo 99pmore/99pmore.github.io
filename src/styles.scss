@@ -6,13 +6,9 @@
     scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: 'Allright';
-    src: url("./assets/fonts/Aesthetic.ttf");
-    font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 
-$font-title: 'Allright', sans-serif;
+$font-tag: 'La Belle Aurore', cursive;
 
 $antique: #fff5e8;
 $tile: #9d432c;
