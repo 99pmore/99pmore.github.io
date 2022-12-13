@@ -1,40 +1,82 @@
 @import "../../../styles.scss";
 
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.jpg) no-repeat center / cover;
-    color: $antique;
-
-    height: 100vh;
-    padding: 10%;
+    padding: 5% 10%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    position: absolute;
+    left: 200px;
+
     section {
-        .open-tag, .close-tag {
-            font-family: 'Lucida Sans Typewriter', 'Lucida Console', 'monaco', 'Bitstream', monospace; 
-            font-size: 1.5rem;
-            letter-spacing: 6px;
-            color: $tile;
+        @include create-tag();
+
+        .about-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            div:first-child {
+                font-size: 1.1rem;
+                border-radius: 50px;
     
-            &::before {
-                content: '<';
+                padding: 40px 0 40px 60px;
+    
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
             }
-    
-            &::after {
-                content: '>';
+
+            div:last-child {
+                img {
+                    border-radius: 25px;
+                    opacity: 0.65;
+
+                    aspect-ratio: 4/3;
+                    object-fit: cover;
+                }
             }
         }
 
-        .about-me {
-            font-size: 1.5rem;
-            cursor: pointer;
+        .education, .experience {
             padding: 40px 0 40px 60px;
+            
+            .edu-content, .exp-content {
+                padding: 40px 0 40px 60px;
 
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .edu-card, .exp-card {
+                    background-color: $dark-grey;
+                    color: white;
+                    border-radius: 25px;
+                    box-shadow: 0 30px 30px -20px #575757;
+
+                    width: 300px;
+                    padding: 40px;
+
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        box-shadow: 0 40px 40px -20px #666666;
+                        transform: translateY(-20px);
+                    }
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
         }
     }
 }
