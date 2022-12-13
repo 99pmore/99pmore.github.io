@@ -1,71 +1,45 @@
 @import "../../../styles.scss";
 
 header {
-    // background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../../assets/img/bg.jpg) no-repeat center / cover;
-    background-color: #d8d8d8;
-    color: #333333;
-
-    height: 100vh;
-    padding: 10%;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .open-tag, .close-tag {
-        font-family: $font-tag; 
-        font-size: 1.5rem;
-        letter-spacing: 6px;
-        color: $tile;
+    .main-header {
+        height: 100vh;
+        padding: 5% 10%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
 
-        &::before {
-            content: '<';
-        }
-
-        &::after {
-            content: '>';
-        }
-    }
-
-    .name {
-        font-family: sans-serif;
-
-        padding: 40px;
-        position: relative;
-
-        border-radius: 50px;
-        background: linear-gradient(145deg, #cacaca, #f0f0f0);
-        box-shadow:  20px 20px 60px #bebebe,
-                     -20px -20px 60px #ffffff;
-
-        .logo {
-            position: absolute;
-            top: 5%;
-            right: 5%;
-            opacity: 0.75;
-        }
-
-        .title {
-            cursor: pointer;
+        position: absolute;
+        left: 200px;
+    
+        @include create-tag();
+    
+        .name {
+            cursor: default;
+            color: transparent;
+            text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.3);
+    
             padding: 40px 0 40px 60px;
-
+    
             display: flex;
-            justify-content: center;
-            flex-direction: column;
+            justify-content: space-between;
             gap: 40px;
-
-            p:first-child {
+    
+            h1 {
                 font-size: 10rem;
+                font-weight: normal;
             }
     
-            p:last-child {
+            h2 {
                 font-size: 2.5rem;
-            }
+                font-weight: normal;
+                text-align: end;
     
-            span {
-                &:hover {
-                    color: $tile;
-                }
+                display: flex;
+                align-items: flex-end;
             }
         }
     }

@@ -7,8 +7,38 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
 
 $font-tag: 'La Belle Aurore', cursive;
+$font-text: 'Montserrat', sans-serif;
 
-$antique: #fff5e8;
 $tile: #9d432c;
+$bg: #e0e0e0;
+$dark-grey: #333333;
+
+@mixin create-tag() {
+    .open-tag, .close-tag {
+        font-family: $font-tag; 
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        color: $tile;
+        cursor: default;
+
+        &::before {
+            content: '<';
+        }
+
+        &::after {
+            content: '>';
+        }
+    }
+}
+
+body {
+    background-color: $bg;
+    color: $dark-grey;
+
+    font-family: $font-text;
+
+    position: relative;
+}
