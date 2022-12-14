@@ -12,5 +12,71 @@ main {
 
     section {
         @include create-tag();
+
+        .languages, .tools, .software {
+            @include create-tag();
+
+            padding: 40px 0 40px 60px;
+
+            div {
+                padding: 40px 0 40px 60px;
+
+                .comment-tag {
+                    font-family: $font-tag; 
+                    font-size: 1.5rem;
+                    letter-spacing: 6px;
+                    color: #ababab;
+                    cursor: default;
+            
+                    &::before {
+                        content: '<!--';
+                    }
+            
+                    &::after {
+                        content: '-->';
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 40px 0;
+
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, 80px);
+                    grid-auto-rows: 160px;
+                    gap: 30px;
+                    justify-content: space-evenly;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 30px;
+
+                        text-align: center;
+
+                        img {
+                            background-color: $dark-grey;
+                            border-radius: 25px;
+                            box-shadow: 0 30px 30px -20px #575757;
+    
+                            padding: 20px;
+
+                            width: 80px;
+                            height: 80px;
+                            object-fit: contain;
+
+                            transition: all 0.3s;
+
+                            &:hover {
+                                box-shadow: 0 40px 40px -20px #666666;
+                                transform: translateY(-10px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
