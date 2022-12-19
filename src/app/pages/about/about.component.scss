@@ -13,7 +13,7 @@ main {
     section {
         @include create-tag();
 
-        .about-me {
+        #about-me {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,10 +41,10 @@ main {
             }
         }
 
-        .education, .experience, .certifications, .languages {
+        section {
             padding: 40px 0 40px 60px;
             
-            .edu-content, .exp-content, .cer-content {
+            .content {
                 padding: 40px 0 40px 60px;
 
                 display: grid;
@@ -54,7 +54,7 @@ main {
                 justify-items: start;
                 align-items: center;
 
-                .edu-card, .exp-card, .cer-card {
+                .card {
                     background-color: $dark-grey;
                     color: white;
                     border-radius: 25px;
@@ -72,14 +72,27 @@ main {
 
                     transition: all 0.3s;
 
-                    &:hover {
-                        box-shadow: 0 40px 40px -20px #666666;
-                        transform: translateY(-20px);
-                    }
-
                     img {
                         object-fit: contain;
                     }
+                }
+
+                pointer-events: none;
+
+                & > * {
+                    pointer-events: auto;
+                }
+
+                &:hover > * {
+                    filter: blur(4px);
+                    opacity: 0.5;
+                }
+                  
+                &:hover > *:hover {
+                    box-shadow: 0 40px 40px -20px #666666;
+                    transform: translateY(-20px);
+                    filter: blur(0);
+                    opacity: 1;
                 }
             }
 
@@ -109,11 +122,24 @@ main {
                     gap: 30px;
 
                     transition: all 0.3s;
+                }
 
-                    &:hover {
-                        box-shadow: 0 40px 40px -20px #666666;
-                        transform: translateY(-20px);
-                    }
+                pointer-events: none;
+
+                & > * {
+                    pointer-events: auto;
+                }
+
+                &:hover > * {
+                    filter: blur(4px);
+                    opacity: 0.5;
+                }
+                  
+                &:hover > *:hover {
+                    box-shadow: 0 40px 40px -20px #666666;
+                    transform: translateY(-20px);
+                    filter: blur(0);
+                    opacity: 1;
                 }
             }
         }
