@@ -13,7 +13,7 @@ main {
     section {
         @include create-tag();
 
-        .languages, .tools, .software {
+        section {
             @include create-tag();
 
             padding: 40px 0 40px 60px;
@@ -47,6 +47,22 @@ main {
                     gap: 30px;
                     justify-content: space-evenly;
 
+                    pointer-events: none;
+
+                    & > * {
+                        pointer-events: auto;
+                    }
+                
+                    &:hover > * {
+                        filter: blur(4px);
+                        opacity: 0.5;
+                    }
+                      
+                    &:hover > *:hover {
+                        filter: blur(0);
+                        opacity: 1;
+                    }
+
                     li {
                         display: flex;
                         justify-content: flex-start;
@@ -55,6 +71,10 @@ main {
                         gap: 30px;
 
                         text-align: center;
+
+                        transition: all 0.3s;
+
+                        @include blur-siblings();
 
                         img {
                             background-color: $dark-grey;
@@ -68,11 +88,6 @@ main {
                             object-fit: contain;
 
                             transition: all 0.3s;
-
-                            &:hover {
-                                box-shadow: 0 40px 40px -20px #666666;
-                                transform: translateY(-10px);
-                            }
                         }
                     }
                 }

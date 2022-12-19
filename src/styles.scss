@@ -34,6 +34,27 @@ $dark-grey: #333333;
     }
 }
 
+@mixin blur-siblings() {
+    pointer-events: none;
+
+    & > * {
+        pointer-events: auto;
+    }
+
+    &:hover > * {
+        filter: blur(4px);
+        opacity: 0.5;
+    }
+      
+    &:hover > *:hover {
+        background-color: $tile;
+        box-shadow: 0 40px 40px -20px #666666;
+        transform: translateY(-20px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 body {
     background-color: $bg;
     color: $dark-grey;
@@ -41,4 +62,24 @@ body {
     font-family: $font-text;
 
     position: relative;
+
+    &::-webkit-scrollbar {
+        background: #e0e0e0;
+        box-shadow: inset 5px 5px 10px #acacac,
+                    inset -5px -5px 10px #ffffff;
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $dark-grey;
+        box-shadow: inset 5px 5px 10px #2b2b2b,
+                inset -5px -5px 10px #3b3b3b;
+        border-radius: 6px;
+
+        &:hover {
+            background: $dark-grey;
+            box-shadow: inset 10px 10px 20px #242424,
+                    inset -10px -10px 20px #3b3b3b;
+        }
+    }
 }
