@@ -67,6 +67,7 @@ nav {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
 
                 transition: all 0.3s;
 
@@ -74,6 +75,10 @@ nav {
                     background: #e0e0e0;
                     box-shadow: inset 20px 20px 30px #aaaaaa,
                                 inset -20px -20px 30px #ffffff;
+
+                    span {
+                        visibility: visible;
+                    }
                 }
 
                 a {
@@ -91,6 +96,34 @@ nav {
 
                     i {
                         color: $tile;
+                    }
+                }
+
+                span {
+                    visibility: hidden;
+                    background-color: #9d432c9c;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 10px;
+
+                    position: absolute;
+                    top: 25%;
+                    left: 110%;
+                    z-index: 1;
+
+                    &::after {
+                        content: "";
+
+                        border-width: 5px;
+                        border-style: solid;
+                        border-color: transparent #9d432c9c transparent transparent;
+
+                        margin-top: -5px;
+
+                        position: absolute;
+                        top: 50%;
+                        right: 100%;
                     }
                 }
             }
