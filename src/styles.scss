@@ -53,6 +53,16 @@ $dark-grey: #333333;
         filter: blur(0);
         opacity: 1;
     }
+
+    app-card {
+        background-color: $dark-grey;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 0 30px 30px -20px #575757;
+        cursor: default;
+    
+        transition: all 0.3s;
+    }
 }
 
 body {
