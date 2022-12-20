@@ -16,6 +16,22 @@ nav {
 
     position: fixed;
 
+    .logo {
+        cursor: pointer;
+
+        img {
+            padding: 10px;
+            transition: all 0.3s;
+
+            &:hover {
+                border-radius: 50px;
+                background: $dark-grey;
+                box-shadow: inset 20px 20px 60px #2b2b2b,
+                        inset -20px -20px 60px #3b3b3b;
+            }
+        }
+    }
+
     .menu {
         border-radius: 50px;
         background: $dark-grey;
