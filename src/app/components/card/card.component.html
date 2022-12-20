@@ -1,0 +1,19 @@
+<div class="card" *ngIf="school">
+    <p>{{ school.date }}</p>
+    <h2>{{ school.title }}</h2>
+    <h3>{{ school.location }}</h3>
+    <img [src]="school.logo" alt="Logo" height="120">
+</div>
+
+<div class="card" *ngIf="company">
+    <p>{{ company.date }}</p>
+    <h2>{{ company.title }}</h2>
+    <h3>{{ company.location }}</h3>
+    <img [src]="company.logo" alt="Logo" height="120">
+</div>
+
+<div class="card" *ngIf="certification">
+    <h2>{{ certification.title }}</h2>
+    <h3>{{ certification.location }}</h3>
+    <img [src]="certification.logo" alt="Logo" height="120">
+</div>

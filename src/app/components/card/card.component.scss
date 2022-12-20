@@ -1,0 +1,47 @@
+@import "../../../styles.scss";
+
+// :host {
+//     @include blur-siblings();
+// }
+
+.card { 
+    height: 500px;
+    width: 300px;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+        object-fit: contain;
+    }
+}
+
+
+
+// Estilos iniciales card
+
+// .card {
+//     background-color: $dark-grey;
+//     color: white;
+//     border-radius: 25px;
+//     box-shadow: 0 30px 30px -20px #575757;
+//     cursor: default;
+
+//     height: 500px;
+//     width: 300px;
+//     padding: 40px;
+
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//     gap: 20px;
+
+//     transition: all 0.3s;
+
+//     img {
+//         object-fit: contain;
+//     }
+// }
