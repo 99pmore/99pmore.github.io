@@ -3,7 +3,7 @@
         <p class="open-tag">Sobre mí</p>
 
         <section id="about-me">
-            <div>
+            <div class="info-container">
                 <p>
                     Soy Graduado en Ingeniería Informática por la Universidad Politécnica de Madrid y actualmente
                     estudio el
@@ -25,10 +25,16 @@
                     leer y
                     las series de televisión.
                 </p>
+                <div>
+                    <p class="open-tag">Currículum Vitae</p>
+                    <div class="button-container">
+                        <button (click)="downloadFile()">Descargar</button>
+                    </div>
+                    <p class="close-tag">/Currículum Vitae</p>
+                </div>
             </div>
-            <div>
-                <img src="../../../assets/img/me.png" onmouseover="this.src='../../../assets/img/profile.jpg'"
-                    onmouseout="this.src='../../../assets/img/me.png'" alt="Foto de mí" height="400">
+            <div class="img-container">
+                <div id="profile-img"></div>
             </div>
         </section>
 

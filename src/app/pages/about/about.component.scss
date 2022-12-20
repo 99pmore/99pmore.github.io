@@ -16,27 +16,102 @@ main {
         #about-me {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 30px;
 
-            div:first-child {
+            .info-container {
                 font-size: 1.1rem;
                 border-radius: 50px;
-    
-                padding: 40px 0 40px 60px;
     
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
+
+                div {
+                    .button-container {
+                        padding: 40px 0 40px 60px;
+                        
+                        button {
+                            cursor: pointer;
+                            font-family: $font-text;
+                            font-size: 1rem;
+    
+                            background: none;
+                            border: solid 1px $dark-grey;
+                            border-radius: 25px;
+                            overflow: hidden;
+    
+                            width: 120px;
+                            height: 60px;
+    
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+    
+                            transition: linear 0.3s;
+    
+                            &:is(:hover,:focus) {
+                                color: white;
+                                border: none;
+                                box-shadow: 0 40px 40px -20px #666666;
+                                transform: translateY(-10px);
+                            }
+                              
+                            &::after {
+                                content: '';
+                                border-radius: 24px;
+        
+                                position: absolute;
+                                inset: 0;
+                                z-index: -1;
+        
+                                transform-origin: left;
+                                transform: scaleX(0);
+        
+                                transition: linear 0.3s;
+                            }
+                              
+                            &:is(:hover, :focus)::after {
+                                transform: scaleX(1);
+                                animation: change-colors 0.9s ease-in forwards;
+                                border: solid 1px $dark-grey;
+                            }
+
+                            @keyframes change-colors {
+                                from {
+                                    background-color: $tile;
+                                } to {
+                                    background-color: $dark-grey;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
-            div:last-child {
-                img {
+            .img-container {
+                height: 400px;
+
+                aspect-ratio: 4/3;
+                object-fit: cover;
+
+                #profile-img {
+                    background: url(../../../assets/img/me.png) no-repeat center / cover;
                     border-radius: 25px;
                     opacity: 0.65;
 
-                    aspect-ratio: 4/3;
-                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        background-image: url(../../../assets/img/profile.jpg);
+                        box-shadow: 0 40px 40px -20px #666666;
+                        transform: translateY(-20px);
+                        opacity: 0.85;
+                    }
                 }
             }
         }
