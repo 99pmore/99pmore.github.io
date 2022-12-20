@@ -15,8 +15,6 @@ header {
         position: absolute;
         left: 200px;
     
-        @include create-tag();
-    
         .name {
             cursor: default;
             color: transparent;

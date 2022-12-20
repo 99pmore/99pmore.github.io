@@ -73,6 +73,8 @@ body {
 
     position: relative;
 
+    @include create-tag();
+
     &::-webkit-scrollbar {
         background: #e0e0e0;
         box-shadow: inset 5px 5px 10px #acacac,

@@ -11,11 +11,7 @@ main {
     left: 200px;
 
     section {
-        @include create-tag();
-
         section {
-            @include create-tag();
-
             padding: 40px 0 40px 60px;
 
             div {

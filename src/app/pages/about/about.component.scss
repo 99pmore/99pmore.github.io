@@ -11,8 +11,6 @@ main {
     left: 200px;
 
     section {
-        @include create-tag();
-
         #about-me {
             display: flex;
             justify-content: center;
