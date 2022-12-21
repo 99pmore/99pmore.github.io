@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Card } from 'src/app/models/Card.interface';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  public schools: any[] = [
+  public schools: Card[] = [
     {
       date: 'may. 2022 - actualidad',
       title: 'Máster en Desarrollo Web FullStack',
@@ -28,7 +29,7 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  public companies: any[] = [
+  public companies: Card[] = [
     {
       date: 'sep. 2021 - mar. 2022',
       title: 'Prácticas en Desarrollo Móvil',
@@ -37,7 +38,7 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  public certifications: any[] = [
+  public certifications: Card[] = [
     {
       title: 'IT Specialist - JavaScript',
       location: 'Certiport - A Pearson VUE Business',
