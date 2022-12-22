@@ -28,15 +28,23 @@ nav {
                 background: $dark-grey;
                 box-shadow: inset 20px 20px 60px #2b2b2b,
                         inset -20px -20px 60px #3b3b3b;
+                // border-radius: 50px;
+                // background: #44556f;
+                // box-shadow: inset 20px 20px 60px #3a485e,
+                //             inset -20px -20px 60px #4e6280;
             }
         }
     }
 
-    .menu {
+    .menu, .socials {
         border-radius: 50px;
         background: $dark-grey;
         box-shadow: inset 20px 20px 60px #2b2b2b,
                 inset -20px -20px 60px #3b3b3b;
+        // border-radius: 50px;
+        // background: #44556f;
+        // box-shadow: inset 20px 20px 60px #3a485e,
+        //             inset -20px -20px 60px #4e6280;
         width: 80%;
 
         padding: 40px;
@@ -50,12 +58,12 @@ nav {
             list-style: none;
 
             display: grid;
-            grid-template-columns: repeat(2, 50px);
-            grid-template-rows: repeat(3, 50px);
-            gap: 20PX;
-
             justify-items: stretch;
             align-items: stretch;
+
+            grid-template-columns: repeat(2, 50px);
+            grid-auto-rows: 50px;
+            gap: 20px;
 
             li {
                 border-radius: 20px;
