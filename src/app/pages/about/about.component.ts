@@ -83,4 +83,8 @@ export class AboutComponent implements OnInit {
     this.blur.clearSiblings()
   }
 
+  public goToNotion() {
+    window.open('https://quill-spark-3af.notion.site/CV-Pablo-Moreno-Mart-n-68686053b8e94ec2bab3244ed01616a6', '_blank');
+  }
+
 }

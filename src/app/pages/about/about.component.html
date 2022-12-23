@@ -28,7 +28,8 @@
                 <div>
                     <p class="open-tag">Currículum Vitae</p>
                     <div class="button-container" data-aos="zoom-out-right" data-aos-duration="950" data-aos-offset="250" data-aos-once="true" data-aos-delay="500">
-                        <button (click)="downloadFile()">Descargar</button>
+                        <app-button (click)="downloadFile()" [text]="'Descargar'"></app-button>
+                        <app-button (click)="goToNotion()" [text]="'Notion'"></app-button>
                     </div>
                     <p class="close-tag">/Currículum Vitae</p>
                 </div>
