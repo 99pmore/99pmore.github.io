@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+
+main {
+    padding: 5% 10%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 200px;
+
+    .msg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:100px;
+
+        cursor: default;
+
+        .code {
+            h1 {
+                font-size: 10rem;
+                color: $aqua;
+                text-align: center;
+            }
+        
+            h2 {
+                font-size: 2rem;
+                color: $grey-sand;
+                text-align: center;
+            }
+        }
+
+        .return {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
