@@ -4,11 +4,10 @@ main {
     padding: 5% 10%;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
-    position: absolute;
-    left: 200px;
+    margin-left: 200px;
 
     section {
         section {
@@ -38,10 +37,16 @@ main {
                     padding: 40px 0;
 
                     display: grid;
+                    justify-content: start;
+
                     grid-template-columns: repeat(auto-fit, 80px);
                     grid-auto-rows: 160px;
                     gap: 30px;
-                    justify-content: space-evenly;
+
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    // gap: 30px;
+                    // justify-content: flex-start;
 
                     @include blur-siblings();
                 }

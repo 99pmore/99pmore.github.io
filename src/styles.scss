@@ -100,8 +100,6 @@ body {
 
     font-family: $font-text;
 
-    position: relative;
-
     @include create-tag();
 
     &::-webkit-scrollbar {
