@@ -57,7 +57,7 @@
         <section>
             <p class="open-tag">Certificaciones y cursos</p>
             <div class="content parent" data-aos="fade-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
-                <app-card *ngFor="let certification of certifications" [certification]="certification" (mouseenter)="clearSiblings()" (mouseleave)="clearSiblings()" class="child"></app-card>
+                <app-card *ngFor="let certification of certifications" [certification]="certification" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()" class="child"></app-card>
             </div>
             <p class="close-tag">/Certificaciones y cursos</p>
         </section>
