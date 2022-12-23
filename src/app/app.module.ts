@@ -9,6 +9,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { CardComponent } from './components/card/card.component';
+import { Error404Component } from './pages/error404/error404.component';
+import { SkillItemComponent } from './components/skill-item/skill-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CardComponent } from './components/card/card.component';
     MenuComponent,
     SkillsComponent,
     PortfolioComponent,
-    CardComponent
+    CardComponent,
+    Error404Component,
+    SkillItemComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
+import { Error404Component } from './pages/error404/error404.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'skills', component: SkillsComponent},
   { path: 'portfolio', component: PortfolioComponent},
-  { path: '**', pathMatch: 'full', redirectTo: ''}
+  { path: 'error-404', component: Error404Component},
+  { path: '**', pathMatch: 'full', redirectTo: 'error-404'}
 ];
 
 @NgModule({
