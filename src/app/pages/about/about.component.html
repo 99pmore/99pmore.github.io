@@ -3,7 +3,7 @@
         <p class="open-tag">Sobre mí</p>
 
         <section id="about-me">
-            <div class="info-container">
+            <div class="info-container" data-aos="zoom-out-right" data-aos-duration="950" data-aos-offset="250" data-aos-once="true">
                 <p>
                     Soy Graduado en Ingeniería Informática por la Universidad Politécnica de Madrid y actualmente
                     estudio el
@@ -27,20 +27,20 @@
                 </p>
                 <div>
                     <p class="open-tag">Currículum Vitae</p>
-                    <div class="button-container">
+                    <div class="button-container" data-aos="zoom-out-right" data-aos-duration="950" data-aos-offset="250" data-aos-once="true" data-aos-delay="500">
                         <button (click)="downloadFile()">Descargar</button>
                     </div>
                     <p class="close-tag">/Currículum Vitae</p>
                 </div>
             </div>
-            <div class="img-container">
+            <div class="img-container" data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
                 <div id="profile-img"></div>
             </div>
         </section>
 
         <section>
             <p class="open-tag">Formación</p>
-            <div class="content">
+            <div class="content" data-aos="fade-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
                 <app-card *ngFor="let school of schools" [school]="school"></app-card>
             </div>
             <p class="close-tag">/Formación</p>
@@ -48,7 +48,7 @@
 
         <section>
             <p class="open-tag">Experiencia</p>
-            <div class="content">
+            <div class="content" data-aos="fade-right" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
                 <app-card *ngFor="let company of companies" [company]="company"></app-card>
             </div>
             <p class="close-tag">/Experiencia</p>
@@ -56,7 +56,7 @@
 
         <section>
             <p class="open-tag">Certificaciones y cursos</p>
-            <div class="content">
+            <div class="content" data-aos="fade-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
                 <app-card *ngFor="let certification of certifications" [certification]="certification"></app-card>
             </div>
             <p class="close-tag">/Certificaciones y cursos</p>
@@ -64,7 +64,7 @@
 
         <section>
             <p class="open-tag">Idiomas</p>
-            <div class="lang-content">
+            <div class="lang-content" data-aos="fade-left" data-aos-duration="750" data-aos-once="true">
                 <div class="lang">
                     <h2>Español</h2>
                     <h3>Nativo</h3>
