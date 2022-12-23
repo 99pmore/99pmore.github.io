@@ -11,6 +11,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { CardComponent } from './components/card/card.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillItemComponent } from './components/skill-item/skill-item.component
     PortfolioComponent,
     CardComponent,
     Error404Component,
-    SkillItemComponent
+    SkillItemComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

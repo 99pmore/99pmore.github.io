@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+
+button {
+    cursor: pointer;
+    font-family: $font-text;
+    font-size: 1rem;
+
+    background: none;
+    border: solid 1px $aqua;
+    border-radius: 25px;
+    overflow: hidden;
+
+    width: 120px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    transition: linear 0.3s;
+
+    &:is(:hover,:focus) {
+        color: white;
+        border: none;
+        box-shadow: 0 40px 40px -20px $grey-sand;
+        transform: translateY(-10px);
+    }
+      
+    &::after {
+        content: '';
+        border-radius: 24px;
+
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        transform-origin: left;
+        transform: scaleX(0);
+
+        transition: linear 0.3s;
+    }
+      
+    &:is(:hover, :focus)::after {
+        transform: scaleX(1);
+        animation: change-colors 0.9s ease-in forwards;
+    }
+}
