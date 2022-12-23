@@ -1,9 +1,13 @@
 @import "../../../styles.scss";
 
 nav {
-    background-color: $dark-grey;
+    // background-color: $cadet;
+    // color: white;
+    // box-shadow: 0 0 40px $cadet;
+
+    background-color: $aqua;
     color: white;
-    box-shadow: 0 0 40px $dark-grey;
+    box-shadow: 0 0 40px $aqua;
 
     width: 200px;
     height: 100vh;
@@ -24,29 +28,21 @@ nav {
             transition: all 0.3s;
 
             &:hover {
-                border-radius: 50px;
-                background: $dark-grey;
-                box-shadow: inset 20px 20px 60px #2b2b2b,
-                        inset -20px -20px 60px #3b3b3b;
-                // border-radius: 50px;
-                // background: #44556f;
-                // box-shadow: inset 20px 20px 60px #3a485e,
-                //             inset -20px -20px 60px #4e6280;
+                // @include neumorphism($dark-grey, #2b2b2b, #3b3b3b);
+
+                // @include neumorphism($cadet, #485761, #627583);
+                @include neumorphism($aqua, #02646f, #028897);
             }
         }
     }
 
     .menu, .socials {
-        border-radius: 50px;
-        background: $dark-grey;
-        box-shadow: inset 20px 20px 60px #2b2b2b,
-                inset -20px -20px 60px #3b3b3b;
-        // border-radius: 50px;
-        // background: #44556f;
-        // box-shadow: inset 20px 20px 60px #3a485e,
-        //             inset -20px -20px 60px #4e6280;
-        width: 80%;
+        // @include neumorphism($dark-grey, #2b2b2b, #3b3b3b);
 
+        // @include neumorphism($cadet, #485761, #627583);
+        @include neumorphism($aqua, #02646f, #028897);
+
+        width: 80%;
         padding: 40px;
 
         display: flex;
@@ -66,10 +62,10 @@ nav {
             gap: 20px;
 
             li {
-                border-radius: 20px;
-                background: #e0e0e0;
-                box-shadow: inset 9px 9px 18px #acacac,
-                            inset -9px -9px 18px #ffffff;
+                // @include s-neumorphism(#e0e0e0, #acacac, #ffffff);
+
+                @include s-neumorphism($silver, #b9bdbe, #fbffff);
+
                 width: 100%;
 
                 display: flex;
@@ -80,9 +76,11 @@ nav {
                 transition: all 0.3s;
 
                 &:hover {
-                    background: #e0e0e0;
-                    box-shadow: inset 20px 20px 30px #aaaaaa,
-                                inset -20px -20px 30px #ffffff;
+                    // box-shadow: inset 20px 20px 30px #aaaaaa,
+                    //             inset -20px -20px 30px #ffffff;
+
+                    box-shadow: inset 20px 20px 30px #b1b6b8,
+                    inset -20px -20px 30px #fbffff;
 
                     span {
                         visibility: visible;
@@ -103,15 +101,17 @@ nav {
                     transition: transform 0.3s;
 
                     i {
-                        color: $tile;
+                        // color: $grey-brown;
+                        color: $ocean;
                     }
                 }
 
                 span {
                     visibility: hidden;
 
-                    background-color: #9d432c9c;
-                    color: #fff;
+                    // background-color: $grey-brown;
+                    background-color: $ocean;
+                    color: white;
                     text-align: center;
                     font-size: 12px;
                     border-radius: 6px;
@@ -128,7 +128,8 @@ nav {
 
                         border-width: 5px;
                         border-style: solid;
-                        border-color: transparent #9d432c9c transparent transparent;
+                        // border-color: transparent $grey-brown transparent transparent;
+                        border-color: transparent $ocean transparent transparent;
 
                         margin-top: -5px;
 

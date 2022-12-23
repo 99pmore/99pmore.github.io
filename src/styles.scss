@@ -15,15 +15,28 @@ $font-text: 'Montserrat', sans-serif;
 $tile: #9d432c;
 $bg: #e0e0e0;
 $dark-grey: #333333;
-// $bg: #f5f5f5;
-// $dark-grey: #44556f;
+
+// Beach palette
+$sand: #E7D2CF;
+$grey-sand: #C7CECB;
+$turquoise: #6CBEBF;
+$aqua: #027683;
+$ocean: #02333E;
+
+// Mountain palette
+$elder: #ECECE2;
+$silver: #DADEDF;
+$cadet: #556672;
+$grey-brown: #756C63;
+$earth: #423930;
 
 @mixin create-tag() {
     .open-tag, .close-tag {
         font-family: $font-tag; 
         font-size: 1.5rem;
         letter-spacing: 6px;
-        color: $tile;
+        // color: $earth;
+        color: $ocean;
         cursor: default;
 
         &::before {
@@ -49,26 +62,57 @@ $dark-grey: #333333;
     }
       
     &:hover > *:hover {
-        background-color: $tile;
-        box-shadow: 0 40px 40px -20px #666666;
+        // background-color: $grey-brown;
+        // background-color: $turquoise;
+        // box-shadow: 0 40px 40px -20px #666666;
+        box-shadow: 0 40px 40px -20px $grey-sand;
         transform: translateY(-20px);
         filter: blur(0);
         opacity: 1;
+
+        animation: change-colors 0.6s ease-in forwards;
     }
 
     app-card {
-        background-color: $dark-grey;
+        // background-color: $cadet;
+        background-color: $grey-sand;
         color: white;
         border-radius: 25px;
-        box-shadow: 0 30px 30px -20px #575757;
+        // box-shadow: 0 30px 30px -20px #575757;
+        box-shadow: 0 30px 30px -20px $grey-sand;
         cursor: default;
     
         transition: all 0.3s;
     }
+
+    @keyframes change-colors {
+        from {
+            // background-color: $grey-brown;
+            background-color: $grey-sand;
+        } to {
+            // background-color: $cadet;
+            background-color: $turquoise;
+        }
+    }
+}
+
+@mixin neumorphism($bg-color, $shadow1, $shadow2) {
+    border-radius: 50px;
+    background: $bg-color;
+    box-shadow: inset 20px 20px 60px $shadow1,
+            inset -20px -20px 60px $shadow2;
+}
+
+@mixin s-neumorphism($bg-color, $shadow1, $shadow2) {
+    border-radius: 20px;
+    background: $bg-color;
+    box-shadow: inset 9px 9px 18px $shadow1,
+            inset -9px -9px 18px $shadow2;
 }
 
 body {
-    background-color: $bg;
+    // background-color: $silver;
+    background-color: white;
     color: $dark-grey;
 
     font-family: $font-text;
@@ -78,22 +122,62 @@ body {
     @include create-tag();
 
     &::-webkit-scrollbar {
-        background: #e0e0e0;
-        box-shadow: inset 5px 5px 10px #acacac,
+        background: white;
+        box-shadow: inset 5px 5px 10px #d9d9d9,
                     inset -5px -5px 10px #ffffff;
         width: 12px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $dark-grey;
-        box-shadow: inset 5px 5px 10px #2b2b2b,
-                inset -5px -5px 10px #3b3b3b;
+        background: $aqua;
+        box-shadow: inset 5px 5px 10px #02646f,
+                inset -5px -5px 10px #028897;
         border-radius: 6px;
 
         &:hover {
-            background: $dark-grey;
-            box-shadow: inset 10px 10px 20px #242424,
-                    inset -10px -10px 20px #3b3b3b;
+            background: $aqua;
+            box-shadow: inset 10px 10px 20px #025a64,
+                    inset -10px -10px 20px #028897;
         }
     }
 }
+
+// &::-webkit-scrollbar {
+//     background: #e0e0e0;
+//     box-shadow: inset 5px 5px 10px #acacac,
+//                 inset -5px -5px 10px #ffffff;
+//     width: 12px;
+// }
+
+// &::-webkit-scrollbar-thumb {
+//     background: $dark-grey;
+//     box-shadow: inset 5px 5px 10px #2b2b2b,
+//             inset -5px -5px 10px #3b3b3b;
+//     border-radius: 6px;
+
+//     &:hover {
+//         background: $dark-grey;
+//         box-shadow: inset 10px 10px 20px #242424,
+//                 inset -10px -10px 20px #3b3b3b;
+//     }
+// }
+
+// &::-webkit-scrollbar {
+//     background: $silver;
+//     box-shadow: inset 5px 5px 10px #b9bdbe,
+//                 inset -5px -5px 10px #fbffff;
+//     width: 12px;
+// }
+
+// &::-webkit-scrollbar-thumb {
+//     background: $cadet;
+//     box-shadow: inset 5px 5px 10px #485761,
+//             inset -5px -5px 10px #627583;
+//     border-radius: 6px;
+
+//     &:hover {
+//         background: $cadet;
+//         box-shadow: inset 10px 10px 20px #3d4b53,
+//                 inset -10px -10px 20px #627583;
+//     }
+// }

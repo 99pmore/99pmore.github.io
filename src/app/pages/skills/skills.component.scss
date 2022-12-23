@@ -21,7 +21,7 @@ main {
                     font-family: $font-tag; 
                     font-size: 1.5rem;
                     letter-spacing: 6px;
-                    color: #ababab;
+                    color: $sand;
                     cursor: default;
             
                     &::before {
@@ -73,9 +73,11 @@ main {
                         @include blur-siblings();
 
                         img {
-                            background-color: $dark-grey;
+                            // background-color: $cadet;
+                            background-color: $grey-sand;
                             border-radius: 25px;
-                            box-shadow: 0 30px 30px -20px #575757;
+                            // box-shadow: 0 30px 30px -20px #575757;
+                            box-shadow: 0 30px 30px -20px $grey-sand;
     
                             padding: 20px;
 
