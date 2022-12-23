@@ -98,11 +98,17 @@ nav {
                     justify-content: center;
                     align-items: center;
 
-                    transition: transform 0.3s;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        i {
+                            color: $ocean;
+                        }
+                    }
 
                     i {
                         // color: $grey-brown;
-                        color: $ocean;
+                        color: $aqua;
                     }
                 }
 

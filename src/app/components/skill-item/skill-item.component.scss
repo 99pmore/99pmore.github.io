@@ -1,0 +1,29 @@
+@import "../../../styles.scss";
+
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    text-align: center;
+
+    transition: all 0.3s;
+
+    img {
+        background-color: $grey-sand;
+        border-radius: 25px;
+        box-shadow: 0 30px 30px -20px $grey-sand;
+
+        padding: 20px;
+
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+
+        transition: all 0.3s;
+
+        @include clear-siblings();
+    }
+}

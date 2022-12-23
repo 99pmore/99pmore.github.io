@@ -9,6 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
 
+
+
+// V A R I A B L E S
+
 $font-tag: 'La Belle Aurore', cursive;
 $font-text: 'Montserrat', sans-serif;
 
@@ -30,12 +34,15 @@ $cadet: #556672;
 $grey-brown: #756C63;
 $earth: #423930;
 
+
+
+// M I X I N S
+
 @mixin create-tag() {
     .open-tag, .close-tag {
         font-family: $font-tag; 
         font-size: 1.5rem;
         letter-spacing: 6px;
-        // color: $earth;
         color: $ocean;
         cursor: default;
 
@@ -50,49 +57,22 @@ $earth: #423930;
 }
 
 @mixin blur-siblings() {
-    pointer-events: none;
-
-    & > * {
-        pointer-events: auto;
-    }
-
-    &:hover > * {
+    .blur:not(:hover) {
         filter: blur(4px);
         opacity: 0.5;
+
+        transition: all 0.3s;
     }
-      
-    &:hover > *:hover {
-        // background-color: $grey-brown;
-        // background-color: $turquoise;
-        // box-shadow: 0 40px 40px -20px #666666;
+}
+
+@mixin clear-siblings() {
+    &:hover {
         box-shadow: 0 40px 40px -20px $grey-sand;
         transform: translateY(-20px);
         filter: blur(0);
         opacity: 1;
 
         animation: change-colors 0.6s ease-in forwards;
-    }
-
-    app-card {
-        // background-color: $cadet;
-        background-color: $grey-sand;
-        color: white;
-        border-radius: 25px;
-        // box-shadow: 0 30px 30px -20px #575757;
-        box-shadow: 0 30px 30px -20px $grey-sand;
-        cursor: default;
-    
-        transition: all 0.3s;
-    }
-
-    @keyframes change-colors {
-        from {
-            // background-color: $grey-brown;
-            background-color: $grey-sand;
-        } to {
-            // background-color: $cadet;
-            background-color: $turquoise;
-        }
     }
 }
 
@@ -110,8 +90,11 @@ $earth: #423930;
             inset -9px -9px 18px $shadow2;
 }
 
+
+
+// S T Y L E S
+
 body {
-    // background-color: $silver;
     background-color: white;
     color: $dark-grey;
 
@@ -142,42 +125,14 @@ body {
     }
 }
 
-// &::-webkit-scrollbar {
-//     background: #e0e0e0;
-//     box-shadow: inset 5px 5px 10px #acacac,
-//                 inset -5px -5px 10px #ffffff;
-//     width: 12px;
-// }
 
-// &::-webkit-scrollbar-thumb {
-//     background: $dark-grey;
-//     box-shadow: inset 5px 5px 10px #2b2b2b,
-//             inset -5px -5px 10px #3b3b3b;
-//     border-radius: 6px;
 
-//     &:hover {
-//         background: $dark-grey;
-//         box-shadow: inset 10px 10px 20px #242424,
-//                 inset -10px -10px 20px #3b3b3b;
-//     }
-// }
+// A N I M A T I O N S
 
-// &::-webkit-scrollbar {
-//     background: $silver;
-//     box-shadow: inset 5px 5px 10px #b9bdbe,
-//                 inset -5px -5px 10px #fbffff;
-//     width: 12px;
-// }
-
-// &::-webkit-scrollbar-thumb {
-//     background: $cadet;
-//     box-shadow: inset 5px 5px 10px #485761,
-//             inset -5px -5px 10px #627583;
-//     border-radius: 6px;
-
-//     &:hover {
-//         background: $cadet;
-//         box-shadow: inset 10px 10px 20px #3d4b53,
-//                 inset -10px -10px 20px #627583;
-//     }
-// }
+@keyframes change-colors {
+    from {
+        background-color: $grey-sand;
+    } to {
+        background-color: $turquoise;
+    }
+}

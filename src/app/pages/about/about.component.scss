@@ -35,7 +35,6 @@ main {
                             font-size: 1rem;
     
                             background: none;
-                            // border: solid 1px $cadet;
                             border: solid 1px $aqua;
                             border-radius: 25px;
                             overflow: hidden;
@@ -53,7 +52,6 @@ main {
                             &:is(:hover,:focus) {
                                 color: white;
                                 border: none;
-                                // box-shadow: 0 40px 40px -20px #666666;
                                 box-shadow: 0 40px 40px -20px $grey-sand;
                                 transform: translateY(-10px);
                             }
@@ -76,16 +74,6 @@ main {
                                 transform: scaleX(1);
                                 animation: change-colors 0.9s ease-in forwards;
                             }
-
-                            @keyframes change-colors {
-                                from {
-                                    // background-color: $grey-brown;
-                                    background-color: $grey-sand
-                                } to {
-                                    // background-color: $cadet;
-                                    background-color: $turquoise;
-                                }
-                            }
                         }
                     }
                 }
@@ -96,8 +84,6 @@ main {
 
                 aspect-ratio: 4/3;
                 object-fit: cover;
-
-                // filter: invert(31%) sepia(81%) saturate(811%) hue-rotate(146deg) brightness(93%) contrast(98%);
 
                 #profile-img {
                     background: url(../../../assets/img/me.png) no-repeat center / cover;
@@ -111,16 +97,11 @@ main {
 
                     &:hover {
                         background-image: url(../../../assets/img/profile.jpg);
-                        // box-shadow: 0 40px 40px -20px #666666;
                         box-shadow: 0 40px 40px -20px $grey-sand;
                         transform: translateY(-20px);
                         opacity: 0.85;
                     }
                 }
-
-                // &:hover {
-                //     filter: none;
-                // }
             }
         }
 
@@ -152,11 +133,9 @@ main {
                 @include blur-siblings();
 
                 .lang {
-                    // background-color: $cadet;
                     background-color: $grey-sand;
                     color: white;
                     border-radius: 25px;
-                    // box-shadow: 0 30px 30px -20px #575757;
                     box-shadow: 0 30px 30px -20px $grey-sand;
                     cursor: default;
 
@@ -171,6 +150,15 @@ main {
                     gap: 30px;
 
                     transition: all 0.3s;
+
+                    &:hover {
+                        box-shadow: 0 40px 40px -20px $grey-sand;
+                        transform: translateY(-20px);
+                        filter: blur(0);
+                        opacity: 1;
+                
+                        animation: change-colors 0.6s ease-in forwards;
+                    }
                 }
             }
         }

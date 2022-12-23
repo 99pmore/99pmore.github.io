@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Card } from 'src/app/models/Card.interface';
+import { BlurService } from 'src/app/services/blur.service';
 
 @Component({
   selector: 'app-about',
@@ -61,7 +62,7 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(private blur: BlurService) { }
 
   ngOnInit(): void {
   }
@@ -72,6 +73,14 @@ export class AboutComponent implements OnInit {
     link.href = fileUrl;
     link.download = 'CV_Pablo_Moreno_Martin.pdf';
     link.click();
+  }
+
+  public blurSiblings() {
+    this.blur.blurSiblings()
+  }
+
+  public clearSiblings() {
+    this.blur.clearSiblings()
   }
 
 }
