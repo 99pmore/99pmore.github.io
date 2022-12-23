@@ -57,7 +57,7 @@ export class AboutComponent implements OnInit {
     {
       title: 'B2 First Certificate in English',
       location: 'Cambridge University',
-      logo: '../../../assets/img/cambridge-light.svg'
+      logo: '../../../assets/img/cambridge-light.png'
     }
   ]
 
