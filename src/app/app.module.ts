@@ -12,6 +12,7 @@ import { CardComponent } from './components/card/card.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ButtonComponent } from './components/button/button.component';
     CardComponent,
     Error404Component,
     SkillItemComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
