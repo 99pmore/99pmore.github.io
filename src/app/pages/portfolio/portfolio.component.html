@@ -1,1 +1,5 @@
-<p>portfolio works!</p>
+<main>
+    <section class='projects-grid'>
+        <app-project-card *ngFor="let project of projects" [project]="project" data-aos="fade-down" data-aos-duration="750" data-aos-offset="250" data-aos-once="true"></app-project-card>
+    </section>
+</main>
