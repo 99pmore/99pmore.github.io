@@ -6,15 +6,45 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
+    gap: 200px;
 
     margin-left: 200px;
 
-    section {
+    .projects-grid {
         display: flex;
         justify-content: center;
         align-items: center;
 
         flex-wrap: wrap;
         gap: 60px;
+    }
+
+    .logos {
+        width: 600px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        gap: 100px;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            flex-wrap: wrap;
+            gap: 60px;
+        }
     }
 }

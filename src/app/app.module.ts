@@ -13,6 +13,7 @@ import { Error404Component } from './pages/error404/error404.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { PortfolioLogoComponent } from './components/portfolio-logo/portfolio-logo.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     SkillItemComponent,
     ButtonComponent,
     ProjectCardComponent,
+    PortfolioLogoComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,11 @@
 <main>
-    <section class='projects-grid'>
+    <section class="projects-grid">
         <app-project-card *ngFor="let project of projects" [project]="project" data-aos="fade-down" data-aos-duration="750" data-aos-offset="250" data-aos-once="true"></app-project-card>
+    </section>
+    <section class="logos">
+        <h2>Como hobbie, también hago logos</h2>
+        <div class="logo">
+            <app-portfolio-logo *ngFor="let logo of logos" [logo]="logo" data-aos="fade-down" data-aos-duration="750" data-aos-offset="50" data-aos-once="true"></app-portfolio-logo>
+        </div>
     </section>
 </main>
