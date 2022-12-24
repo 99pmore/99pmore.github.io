@@ -14,26 +14,49 @@ header {
     .name {
         cursor: default;
         color: transparent;
-        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.75), -1px -1px 1px rgba(0, 0, 0, 0.15);
+        // text-shadow: 6px 6px 6px rgba(255, 255, 255, 0.75), -5px -5px 5px rgba(0, 0, 0, 0.15);
+        text-shadow: 6px 6px 6px rgba(255, 255, 255, 0.15), -5px -5px 5px rgba(0, 0, 0, 0.025);
 
+        animation: engrave-title 0.6s linear forwards;
+        animation-delay: 1s;
+
+        width: 100%;
         padding: 40px 0 40px 60px;
 
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         gap: 40px;
 
         h1 {
             font-size: 10rem;
             font-weight: 500;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
         }
 
         h2 {
             font-size: 2.5rem;
             font-weight: 500;
             text-align: end;
-
-            display: flex;
-            align-items: flex-end;
         }
+    }
+}
+
+@keyframes engrave-title {
+    0% {
+        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.30), -4px -4px 4px rgba(0, 0, 0, 0.05);
+    }
+    33% {
+        text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.45), -3px -3px 3px rgba(0, 0, 0, 0.075);
+    }
+    66% {
+        text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.60), -2px -2px 2px rgba(0, 0, 0, 0.095);
+    }
+    100% {
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.75), -1px -1px 1px rgba(0, 0, 0, 0.15);
     }
 }
