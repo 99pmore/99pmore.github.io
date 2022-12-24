@@ -8,11 +8,11 @@ import { Card } from 'src/app/models/Card.interface';
 })
 export class CardComponent implements OnInit {
 
-  @Input() school: Card | undefined
+  @Input() school!: Card
 
-  @Input() company: Card | undefined
+  @Input() company!: Card
 
-  @Input() certification: Card | undefined
+  @Input() certification!: Card
 
   constructor() { }
 
