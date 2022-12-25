@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './pages/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
