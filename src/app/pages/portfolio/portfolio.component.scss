@@ -11,6 +11,10 @@ main {
 
     margin-left: 200px;
 
+    .projects-grid, .logos {
+        width: 100%;
+    }
+
     .projects-grid {
         display: flex;
         justify-content: center;
@@ -21,14 +25,11 @@ main {
     }
 
     .logos {
-        width: 600px;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-        flex-wrap: wrap;
+        
         gap: 100px;
 
         h2 {
@@ -37,10 +38,8 @@ main {
         }
 
         .logo {
-            width: 100%;
-
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
 
             flex-wrap: wrap;
