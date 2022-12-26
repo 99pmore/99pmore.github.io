@@ -32,6 +32,7 @@
         }
 
         .description {
+            pointer-events: all;
             opacity: 1;
 
             width: 100%;
@@ -134,5 +135,18 @@
 
         transform: translateY(200px);
         transition: all 0.3s;
+
+        a {
+            text-decoration: none;
+            color: $sand;
+
+            cursor: pointer;
+
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 }

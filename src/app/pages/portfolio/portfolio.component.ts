@@ -19,24 +19,28 @@ export class PortfolioComponent implements OnInit {
       tools: [ this.URL_LOGOS + '/angular-light.png', this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
       description: 'Web currículum y portfolio, desarrollado en Angular',
       image: this.URL_PROJECTS + '/miweb-angular.png',
+      link: 'https://99pmore.github.io'
     },
     {
       name: 'Mytho',
       tools: [ this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
       description: 'Sitio web sobre mitología, desarrollado en HTML y SCSS',
       image: this.URL_PROJECTS + '/mytho.webp',
+      link: 'https://99pmore.github.io/Mytho/'
     },
     {
       name: 'CV Web',
       tools: [ this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
       description: 'Web currículum y portfolio, desarrollado en HTML y SCSS',
       image: this.URL_PROJECTS + '/miweb.webp',
+      link: 'https://99pmore.github.io/CV_Web/'
     },
     {
       name: 'Yourney',
       tools: [ this.URL_LOGOS + '/swift-light.png', this.URL_LOGOS + '/java-light.png', this.URL_LOGOS + '/xcode-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/spring-light.png', this.URL_LOGOS + '/mongo-light.png'],
       description: '(TFG) Aplicación de gestión de viajes para iOS, desarrollado en Swift para el Front y en Java Spring Boot para el Back',
       image: this.URL_PROJECTS + '/yourney.webp',
+      link: 'https://drive.google.com/file/d/1zWr4npBiY1QVoZ0Js8NGUcRvLfWliwWs/view'
     },
   ]
 
