@@ -1,5 +1,13 @@
-<app-menu></app-menu>
-<header>
+<div [ngSwitch]="device">
+    <div *ngSwitchCase="'phone'">
+        <app-menu></app-menu>
+    </div>
+    <div *ngSwitchCase="'laptop'">
+        <app-s-menu></app-s-menu>
+    </div>
+</div>
+
+<header [ngClass]="{'is-phone': isPhone}">
     <p class="open-tag">Soy</p>
     <div class="name">
         <h1 data-aos="zoom-out-right" data-aos-duration="950" data-aos-once="true">

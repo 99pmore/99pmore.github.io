@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public hideSideMenu = false
+  public isPhone = false
+
+  public device = 'phone'
+
+  constructor(
+    private responsive: BreakpointObserver
+  ) { }
 
   ngOnInit(): void {
+    this.responsive.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,      
+      ])
+      .subscribe(result => {
+
+        this.hideSideMenu = false
+        this.isPhone = false
+
+        this.device = 'phone'
+
+        if (result.matches) {
+          this.hideSideMenu = true
+          this.isPhone = true
+
+          this.device = 'laptop'
+        }
+    })
   }
 
 }

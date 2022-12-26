@@ -47,6 +47,26 @@ header {
     }
 }
 
+.is-phone {
+    margin-left: 0;
+
+    .open-tag, .close-tag {
+        font-size: 1rem;
+    }
+
+    .name {
+        padding: 20px 0 20px 30px;
+
+        h1 {
+            font-size: 4.25rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+}
+
 @keyframes engrave-title {
     0% {
         text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.30), -4px -4px 4px rgba(0, 0, 0, 0.05);
