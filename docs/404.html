@@ -1,62 +1,145 @@
-<style>
-    main {
-        padding: 5% 10%;
-        height: 100vh;
+<!DOCTYPE html>
+<html lang="en">
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
 
-    main .msg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 100px;
-
-        padding: 0 100px;
-
-        cursor: default;
-    }
-
-    main .msg .code h1 {
-        font-size: 10rem;
-        color: #027683;
-        text-align: center;
-    }
-
-    main .msg .code h2 {
-        font-size: 2rem;
-        color: #C7CECB;
-        text-align: center;
-    }
-
-    main .msg .return {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    main .msg .return p {
-        font-size: 1.5rem;
-    }
-</style>
-
-<main>
-    <div class="img">
-        <img src="./assets/img/404/locke.gif" alt="Dibujo de John Lock (Lost)">
-    </div>
-    <div class="msg">
-        <div class="code">
-            <h1 [style.fontSize]="textSize" (mouseenter)="text = '4 8 15 16 23 42'; textSize='5rem'" (mouseleave)="text = '404'; textSize='10rem'">{{ text }}</h1>
-            <h2>Esta página no existe</h2>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+    
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
+    
+        main {
+            font-family: 'Montserrat', sans-serif;
+            padding: 5% 10%;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        main .msg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+    
+            padding: 0 100px;
+    
+            cursor: default;
+        }
+    
+        main .msg .code h1 {
+            font-size: 10rem;
+            color: #027683;
+            text-align: center;
+        }
+    
+        main .msg .code h2 {
+            font-size: 2rem;
+            color: #C7CECB;
+            text-align: center;
+        }
+    
+        main .msg .return {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+    
+        main .msg .return p {
+            font-size: 1.5rem;
+            color: #333333;
+        }
+    
+        button {
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+    
+            background: none;
+            border: solid 1px #027683;
+            border-radius: 25px;
+            overflow: hidden;
+    
+            width: 120px;
+            height: 60px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+    
+            transition: linear 0.3s;
+        }
+    
+        button:is(:hover, :focus) {
+            color: white;
+            border: none;
+            box-shadow: 0 40px 40px -20px #C7CECB;
+            transform: translateY(-10px);
+        }
+    
+        button::after {
+            content: '';
+            border-radius: 24px;
+    
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+    
+            transform-origin: left;
+            transform: scaleX(0);
+    
+            transition: linear 0.3s;
+        }
+    
+        button:is(:hover, :focus)::after {
+            transform: scaleX(1);
+            animation: change-colors 0.9s ease-in forwards;
+        }
+    
+        @keyframes change-colors {
+            from {
+                background-color: #C7CECB;
+            }
+    
+            to {
+                background-color: #6CBEBF;
+            }
+        }
+    </style>
+    <main>
+        <div class="img">
+            <img src="./assets/img/404/locke.gif" alt="Dibujo de John Lock (Lost)">
         </div>
-        <div class="return">
-            <p>¿Te has perdido?</p>
-            <app-button routerLink="/" [text]="'Inicio'"></app-button>
+        <div class="msg">
+            <div class="code">
+                <h1>404</h1>
+                <h2>Esta página no existe</h2>
+            </div>
+            <div class="return">
+                <p>¿Te has perdido?</p>
+                <button onclick="location.href='./index.html'">Inicio</button>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
+</body>
+
+</html>
