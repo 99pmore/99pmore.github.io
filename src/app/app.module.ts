@@ -15,6 +15,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { PortfolioLogoComponent } from './components/portfolio-logo/portfolio-logo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SMenuComponent } from './components/s-menu/s-menu.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonComponent,
     ProjectCardComponent,
     PortfolioLogoComponent,
+    SMenuComponent,
   ],
   imports: [
     BrowserModule,

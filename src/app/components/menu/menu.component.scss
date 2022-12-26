@@ -15,6 +15,7 @@ nav {
     gap: 40px;
 
     position: fixed;
+    z-index: 100;
 
     .logo {
         cursor: pointer;

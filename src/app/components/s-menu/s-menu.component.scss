@@ -1,0 +1,146 @@
+@import "../../../styles.scss";
+
+.bg-close {
+    background-color: rgba(108, 190, 191, 0.25);
+    opacity: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 90;
+    top: 0;
+
+    transition: all 0.6s;
+}
+
+.bg-open {
+    opacity: 1;
+
+    position: fixed;
+    display: block;
+
+    transition: all 0.6s;
+}
+
+.hamburger {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 105;
+
+    span {
+        background-color: $ocean;
+
+        width: 20px;
+        height: 2px;
+    }
+}
+
+.nav-close {
+    background-color: rgba(2, 118, 131, 0.85);
+    color: white;
+    box-shadow: 0 0 40px $aqua;
+    backdrop-filter: blur(4px);
+
+    width: 0;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    transition: all 0.6s;
+
+    .menu, .socials {
+        width: 60%;
+        padding: 10px 20px;
+
+        ul {
+            height: 100%;
+            list-style: none;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+
+            li {
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transition: all 0.3s;
+
+                a {
+                    text-decoration: none;
+                    color: $dark-grey;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        i {
+                            color: white;
+                        }
+                    }
+
+                    i {
+                        color: $sand;
+                    }
+
+                    span {
+                        color: white;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .socials {
+        ul {
+            display: grid;
+            justify-items: stretch;
+            align-items: stretch;
+    
+            grid-template-columns: repeat(2, 50px);
+            grid-auto-rows: 50px;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.nav-open {
+    position: fixed;
+    left: 0;
+    width: 80vw;
+
+    transition: all 0.6s;
+}
