@@ -14,6 +14,7 @@ import { SkillItemComponent } from './components/skill-item/skill-item.component
 import { ButtonComponent } from './components/button/button.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { PortfolioLogoComponent } from './components/portfolio-logo/portfolio-logo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PortfolioLogoComponent } from './components/portfolio-logo/portfolio-lo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
