@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,9 +11,25 @@ export class Error404Component implements OnInit {
   public text: string = '404'
   public textSize = '10rem'
 
-  constructor() { }
+  public isPhone = false
+
+  constructor(
+    private responsive: BreakpointObserver
+    ) { }
 
   ngOnInit(): void {
+    this.responsive.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,      
+      ])
+      .subscribe(result => {
+        this.isPhone = false
+
+        if (result.matches) {
+          this.isPhone = true
+          this.textSize = '5rem'
+        }
+    })
   }
 
 }
