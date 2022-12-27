@@ -4,46 +4,61 @@ main {
     padding: 5% 10%;
     
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 200px;
 
     margin-left: 200px;
 
-    .projects-grid, .logos {
+    section {
         width: 100%;
-    }
 
-    .projects-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        flex-wrap: wrap;
-        gap: 60px;
-    }
-
-    .logos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-        gap: 100px;
-
-        h2 {
-            font-size: 2rem;
-            text-align: center;
+        .projects-grid, .logos {
+            padding: 40px 0 40px 60px;
+            width: 100%;
         }
-
-        .logo {
+    
+        .projects-grid {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-
+    
             flex-wrap: wrap;
             gap: 60px;
+        }
+    
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            gap: 100px;
+    
+            .comment-tag {
+                font-family: $font-tag; 
+                font-size: 1.5rem;
+                letter-spacing: 6px;
+                color: $sand;
+                cursor: default;
+        
+                &::before {
+                    content: '<!--';
+                }
+        
+                &::after {
+                    content: '-->';
+                }
+            }
+    
+            .logo {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                flex-wrap: wrap;
+                gap: 60px;
+            }
         }
     }
 }
@@ -54,5 +69,9 @@ main {
 
     .open-tag, .close-tag {
         font-size: 1.25rem;
+    }
+
+    .projects-grid, .logos {
+        padding: 30px 0;
     }
 }
