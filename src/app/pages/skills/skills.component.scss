@@ -56,3 +56,32 @@ main {
         }
     }
 }
+
+.is-phone {
+    padding: 60px 20px;
+    margin-left: 0;
+
+    .open-tag, .close-tag {
+        font-size: 1.25rem;
+    }
+
+    section {
+        section {
+            padding: 30px 0;
+
+            div {
+                padding: 20px 0;
+
+                .comment-tag {
+                    font-size: 1.25rem;
+                }
+
+                ul {
+                    padding: 20px 0;
+
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

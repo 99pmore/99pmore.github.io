@@ -1,4 +1,4 @@
-<div class="card" [ngStyle]="{'background-image': 'url(' + project.image + ')'}">
+<div class="card" [ngStyle]="{'background-image': 'url(' + project.image + ')'}" [ngClass]="{'is-phone': isPhone}">
     <div class="dark"></div>
     <ul>
         <li *ngFor="let tool of project.tools">

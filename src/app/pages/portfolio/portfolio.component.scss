@@ -47,3 +47,12 @@ main {
         }
     }
 }
+
+.is-phone {
+    padding: 60px 20px;
+    margin-left: 0;
+
+    .open-tag, .close-tag {
+        font-size: 1.25rem;
+    }
+}

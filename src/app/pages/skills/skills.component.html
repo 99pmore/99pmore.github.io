@@ -1,5 +1,13 @@
-<app-menu></app-menu>
-<main>
+<div [ngSwitch]="device">
+    <div *ngSwitchCase="'phone'">
+        <app-menu></app-menu>
+    </div>
+    <div *ngSwitchCase="'laptop'">
+        <app-s-menu></app-s-menu>
+    </div>
+</div>
+
+<main [ngClass]="{'is-phone': isPhone}">
     <section>
         <p class="open-tag">Competencias</p>
 
