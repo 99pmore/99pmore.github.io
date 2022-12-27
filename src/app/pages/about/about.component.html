@@ -1,5 +1,13 @@
-<app-menu></app-menu>
-<main>
+<div [ngSwitch]="device">
+    <div *ngSwitchCase="'phone'">
+        <app-menu></app-menu>
+    </div>
+    <div *ngSwitchCase="'laptop'">
+        <app-s-menu></app-s-menu>
+    </div>
+</div>
+
+<main [ngClass]="{'is-phone': isPhone}">
     <section>
         <p class="open-tag">Sobre mí</p>
 
@@ -35,9 +43,7 @@
                     <p class="close-tag">/Currículum Vitae</p>
                 </div>
             </div>
-            <div class="img-container" data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
-                <div id="profile-img"></div>
-            </div>
+            <div id="profile-img" data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true"></div>
         </section>
 
         <section>

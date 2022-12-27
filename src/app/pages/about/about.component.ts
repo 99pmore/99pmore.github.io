@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Card } from 'src/app/models/Card.interface';
 import { BlurService } from 'src/app/services/blur.service';
@@ -62,9 +63,35 @@ export class AboutComponent implements OnInit {
     }
   ]
 
-  constructor(private blur: BlurService) { }
+  public hideSideMenu = false
+  public isPhone = false
+
+  public device = 'phone'
+
+  constructor(
+    private blur: BlurService,
+    private responsive: BreakpointObserver
+    ) { }
 
   ngOnInit(): void {
+    this.responsive.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,      
+      ])
+      .subscribe(result => {
+
+        this.hideSideMenu = false
+        this.isPhone = false
+
+        this.device = 'phone'
+
+        if (result.matches) {
+          this.hideSideMenu = true
+          this.isPhone = true
+
+          this.device = 'laptop'
+        }
+    })
   }
 
   public downloadFile() {

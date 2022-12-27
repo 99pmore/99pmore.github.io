@@ -1,38 +1,38 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, Input, OnInit } from '@angular/core';
-import { Card } from 'src/app/models/Card.interface';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class CardComponent implements OnInit {
+export class PhoneBreakpointsService {
 
-  @Input() school!: Card
-
-  @Input() company!: Card
-
-  @Input() certification!: Card
-
+  public hideSideMenu = false
   public isPhone = false
+
+  public device = 'phone'
 
   constructor(
     private responsive: BreakpointObserver
   ) { }
 
-  ngOnInit(): void {
+  public setToPhone() {
     this.responsive.observe([
       Breakpoints.XSmall,
       Breakpoints.Small,      
       ])
       .subscribe(result => {
+
+        this.hideSideMenu = false
         this.isPhone = false
 
+        this.device = 'phone'
+
         if (result.matches) {
+          this.hideSideMenu = true
           this.isPhone = true
+
+          this.device = 'laptop'
         }
     })
   }
-
 }

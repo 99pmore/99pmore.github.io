@@ -8,7 +8,8 @@
     cursor: default;
 
     height: 500px;
-    width: 300px;
+    // width: 300px;
+    aspect-ratio: 9/16;
     padding: 40px;
 
     display: flex;
@@ -24,4 +25,22 @@
     }
 
     @include clear-siblings();
+}
+
+.is-phone {
+    height: 400px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        height: 80px;
+    }
 }
