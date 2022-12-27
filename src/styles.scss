@@ -47,12 +47,20 @@ $earth: #423930;
         color: $ocean;
         cursor: default;
 
+        &::after {
+            content: '>';
+        }
+    }
+
+    .open-tag {
         &::before {
             content: '<';
         }
+    }
 
-        &::after {
-            content: '>';
+    .close-tag {
+        &::before {
+            content: '</';
         }
     }
 }
