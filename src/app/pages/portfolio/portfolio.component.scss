@@ -71,7 +71,9 @@ main {
         font-size: 1.25rem;
     }
 
-    .projects-grid, .logos {
-        padding: 30px 0;
+    section {
+        .projects-grid, .logos {
+            padding: 30px 0;
+        }
     }
 }
