@@ -68,6 +68,14 @@ header {
     }
 }
 
+.is-laptop {
+    .name {
+        h1 {
+            font-size: 6.5rem;
+        }
+    }
+}
+
 @keyframes engrave-title {
     0% {
         text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.30), -4px -4px 4px rgba(0, 0, 0, 0.05);

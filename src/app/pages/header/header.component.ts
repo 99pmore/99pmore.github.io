@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   public hideSideMenu = false
   public isPhone = false
+  public isLaptop = false
 
   public device = 'phone'
 
@@ -18,6 +19,7 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
     this.responsive.observe([
       Breakpoints.XSmall,
       Breakpoints.Small,      
@@ -33,7 +35,20 @@ export class HeaderComponent implements OnInit {
           this.hideSideMenu = true
           this.isPhone = true
 
-          this.device = 'laptop'
+          this.device = 'pc'
+        }
+    })
+
+    this.responsive.observe([
+      Breakpoints.Medium,
+      Breakpoints.Large      
+      ])
+      .subscribe(result => {
+
+        this.isLaptop = false
+
+        if (result.matches) {
+          this.isLaptop = true
         }
     })
   }

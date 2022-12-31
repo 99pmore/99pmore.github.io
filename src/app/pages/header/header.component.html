@@ -2,12 +2,12 @@
     <div *ngSwitchCase="'phone'">
         <app-menu></app-menu>
     </div>
-    <div *ngSwitchCase="'laptop'">
+    <div *ngSwitchCase="'pc'">
         <app-s-menu></app-s-menu>
     </div>
 </div>
 
-<header [ngClass]="{'is-phone': isPhone}">
+<header [ngClass]="{'is-phone': isPhone, 'is-laptop': isLaptop}">
     <p class="open-tag">Soy</p>
     <div class="name">
         <h1 data-aos="zoom-out-right" data-aos-duration="950" data-aos-once="true">
