@@ -37,7 +37,7 @@ export class PortfolioComponent implements OnInit {
       link: 'https://99pmore.github.io/Mytho/'
     },
     {
-      name: 'CV Web',
+      name: 'CV Web (desactualizado)',
       tools: [ this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
       description: 'Web currículum y portfolio, desarrollado en HTML y SCSS',
       image: this.URL_PROJECTS + '/miweb.webp',
