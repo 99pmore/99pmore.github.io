@@ -18,22 +18,6 @@ main {
             div {
                 padding: 40px 0 40px 60px;
 
-                .comment-tag {
-                    font-family: $font-tag; 
-                    font-size: 1.5rem;
-                    letter-spacing: 6px;
-                    color: $sand;
-                    cursor: default;
-            
-                    &::before {
-                        content: '<!--';
-                    }
-            
-                    &::after {
-                        content: '-->';
-                    }
-                }
-
                 ul {
                     list-style: none;
                     padding: 40px 0;
@@ -44,11 +28,6 @@ main {
                     grid-template-columns: repeat(auto-fit, 80px);
                     grid-auto-rows: 160px;
                     gap: 30px;
-
-                    // display: flex;
-                    // flex-wrap: wrap;
-                    // gap: 30px;
-                    // justify-content: flex-start;
 
                     @include blur-siblings();
                 }
