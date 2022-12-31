@@ -16,9 +16,16 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'GoT API',
+      tools: [this.URL_LOGOS + '/angular-light.png', this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
+      description: 'Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API "api.got.show", desarrollada en Angular',
+      image: this.URL_PROJECTS + '/got.png',
+      link: ''
+    },
+    {
       name: 'Mi web portfolio',
       tools: [ this.URL_LOGOS + '/angular-light.png', this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
-      description: 'Web currículum y portfolio, desarrollado en Angular',
+      description: 'Web currículum y portfolio, desarrollada en Angular',
       image: this.URL_PROJECTS + '/miweb-angular.png',
       link: 'https://99pmore.github.io'
     },
