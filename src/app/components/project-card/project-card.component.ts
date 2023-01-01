@@ -31,4 +31,8 @@ export class ProjectCardComponent implements OnInit {
     })
   }
 
+  public goToURL() {
+    window.open(this.project.link, '_blank');
+  }
+
 }

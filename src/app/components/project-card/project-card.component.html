@@ -10,6 +10,6 @@
     </div>
     <div class="description">
         <p>{{ project.description }}</p>
-        <a *ngIf="project.link" [href]="project.link" target="_blank">Ver</a>
+        <app-s-button (click)="goToURL()" [text]="'Ver'"></app-s-button>
     </div>
 </div>

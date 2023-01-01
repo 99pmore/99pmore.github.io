@@ -12,7 +12,7 @@
     padding: 40px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -121,7 +121,7 @@
 
         width: 100%;
         height: 300px;
-        padding: 0 40px;
+        padding: 20px 40px;
 
         display: flex;
         justify-content: center;
@@ -138,55 +138,7 @@
         transition: all 0.3s;
 
         p {
-            text-align: left;
             width: 90%;
-        }
-
-        a {
-            text-decoration: none;
-            font-family: $font-text;
-            font-size: 1rem;
-        
-            background: white;
-            color: $dark-grey;
-            border: none;
-            border-radius: 25px;
-            overflow: hidden;
-        
-            width: 80px;
-            height: 40px;
-        
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        
-            transition: linear 0.3s;
-        
-            &:is(:hover,:focus) {
-                color: $ocean;
-                border: none;
-                box-shadow: 0 40px 40px -20px $ocean;
-                transform: translateY(-10px);
-            }
-              
-            &::after {
-                content: '';
-
-                position: absolute;
-                inset: 0;
-                z-index: -1;
-        
-                transform-origin: left;
-                transform: scaleX(0);
-        
-                transition: linear 0.3s;
-            }
-              
-            &:is(:hover, :focus)::after {
-                transform: scaleX(1);
-                animation: change-colors2 0.9s ease-in forwards;
-            }
         }
     }
 }
@@ -197,15 +149,11 @@
 
     &:hover {
         .name {
-            transform: translateY(-200px);
+            transform: translateY(0);
         }
 
         .description {
             height: 200px;
-
-            p {
-                text-align: center;
-            }
         }
     }
 
@@ -244,20 +192,10 @@
 
         height: 150px;
         padding: 10px 20px;
+
         gap: 10px;
 
         transform: translateY(100px);
-
-        a {
-            font-size: 0.85rem;
-        
-            width: 50px;
-            height: 30px;
-        
-            &:is(:hover,:focus) {
-                transform: translateY(0px);
-            }
-        }
     }
 }
 
