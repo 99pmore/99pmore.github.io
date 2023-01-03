@@ -75,6 +75,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.getIsMobile()
+    window.scroll(0,0)
   }
 
   public downloadFile() {

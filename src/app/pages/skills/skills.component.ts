@@ -115,6 +115,7 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getIsMobile()
+    window.scroll(0,0)
   }
 
   public blurSiblings() {

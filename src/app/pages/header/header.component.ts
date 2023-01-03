@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.getIsMobile()
     this.getIsLaptop()
+    window.scroll(0,0)
   }
 
   private getIsMobile() {

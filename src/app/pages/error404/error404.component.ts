@@ -19,6 +19,7 @@ export class Error404Component implements OnInit {
 
   ngOnInit(): void {
     this.getIsMobile()
+    window.scroll(0,0)
   }
 
   private getIsMobile() {
