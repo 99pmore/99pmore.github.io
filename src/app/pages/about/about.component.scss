@@ -1,8 +1,9 @@
 @import "../../../styles.scss";
 
 main {
+ 	overflow: hidden;
     padding: 5% 10%;
-    
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,7 +22,7 @@ main {
             .info-container {
                 font-size: 1.1rem;
                 border-radius: 50px;
-    
+
                 width: 100%;
 
                 display: flex;
@@ -59,7 +60,7 @@ main {
 
         section {
             padding: 40px 0 40px 60px;
-            
+
             .content {
                 padding: 40px 0 40px 60px;
 
@@ -115,7 +116,7 @@ main {
                         transform: translateY(-20px);
                         filter: blur(0);
                         opacity: 1;
-                
+
                         animation: change-colors 0.6s ease-in forwards;
                     }
                 }
@@ -140,7 +141,7 @@ main {
 
             .info-container {
                 font-size: 1rem;
-                
+
                 div {
                     .button-container {
                         padding: 20px 0;
@@ -154,7 +155,7 @@ main {
 
         section {
             padding: 30px 0;
-            
+
             .content {
                 padding: 20px 0;
 
@@ -190,7 +191,7 @@ main {
                         transform: translateY(-20px);
                         filter: blur(0);
                         opacity: 1;
-                
+
                         animation: change-colors 0.6s ease-in forwards;
                     }
                 }
