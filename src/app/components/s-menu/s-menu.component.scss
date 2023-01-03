@@ -105,14 +105,8 @@
 
                     transition: all 0.3s;
 
-                    &:hover {
-                        i {
-                            color: white;
-                        }
-                    }
-
                     i {
-                        color: $sand;
+                        color: white;
                     }
 
                     span {
@@ -136,6 +130,7 @@
 
             i {
                 font-size: 1.5rem;
+                color: white;
             }
         }
     }
