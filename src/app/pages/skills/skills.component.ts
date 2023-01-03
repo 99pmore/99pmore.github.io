@@ -1,7 +1,7 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/models/Skill.interface';
 import { BlurService } from 'src/app/services/blur.service';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
   selector: 'app-skills',
@@ -103,35 +103,18 @@ export class SkillsComponent implements OnInit {
     },
   ]
 
-  public hideSideMenu = false
-  public isPhone = false
+  public hideSideMenu: boolean = false
+  public isMobile: boolean = false
 
-  public device = 'phone'
+  public device: string = 'mobile'
 
   constructor(
     private blur: BlurService,
-    private responsive: BreakpointObserver
+    private breakpointService: BreakpointService
     ) { }
 
   ngOnInit(): void {
-    this.responsive.observe([
-      Breakpoints.XSmall,
-      Breakpoints.Small,      
-      ])
-      .subscribe(result => {
-
-        this.hideSideMenu = false
-        this.isPhone = false
-
-        this.device = 'phone'
-
-        if (result.matches) {
-          this.hideSideMenu = true
-          this.isPhone = true
-
-          this.device = 'laptop'
-        }
-    })
+    this.getIsMobile()
   }
 
   public blurSiblings() {
@@ -140,6 +123,14 @@ export class SkillsComponent implements OnInit {
 
   public clearSiblings() {
     this.blur.clearSiblings()
+  }
+
+  private getIsMobile() {
+    this.breakpointService.getIsMobile().subscribe(result => {
+      this.hideSideMenu = result.matches ? true : false
+      this.isMobile = result.matches ? true : false
+      this.device = result.matches ? 'mobile' : 'pc'
+    })
   }
 
 }

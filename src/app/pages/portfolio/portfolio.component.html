@@ -1,13 +1,13 @@
 <div [ngSwitch]="device">
-    <div *ngSwitchCase="'phone'">
+    <div *ngSwitchCase="'pc'">
         <app-menu></app-menu>
     </div>
-    <div *ngSwitchCase="'laptop'">
+    <div *ngSwitchCase="'mobile'">
         <app-s-menu></app-s-menu>
     </div>
 </div>
 
-<main [ngClass]="{'is-phone': isPhone}">
+<main [ngClass]="{'is-mobile': isMobile}">
     <section>
         <p class="open-tag">Portfolio</p>
 
@@ -26,3 +26,5 @@
         <p class="close-tag">Portfolio</p>
     </section>
 </main>
+
+<app-footer></app-footer>

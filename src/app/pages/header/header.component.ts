@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
   selector: 'app-header',
@@ -8,48 +8,32 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 })
 export class HeaderComponent implements OnInit {
 
-  public hideSideMenu = false
-  public isPhone = false
-  public isLaptop = false
+  public hideSideMenu: boolean = false
+  public isMobile: boolean = false
+  public isLaptop: boolean = false
 
-  public device = 'phone'
+  public device: string = 'mobile'
 
   constructor(
-    private responsive: BreakpointObserver
+    private breakpointService: BreakpointService
   ) { }
 
   ngOnInit(): void {
+    this.getIsMobile()
+    this.getIsLaptop()
+  }
 
-    this.responsive.observe([
-      Breakpoints.XSmall,
-      Breakpoints.Small,      
-      ])
-      .subscribe(result => {
-
-        this.hideSideMenu = false
-        this.isPhone = false
-
-        this.device = 'phone'
-
-        if (result.matches) {
-          this.hideSideMenu = true
-          this.isPhone = true
-
-          this.device = 'pc'
-        }
+  private getIsMobile() {
+    this.breakpointService.getIsMobile().subscribe(result => {
+      this.hideSideMenu = result.matches ? true : false
+      this.isMobile = result.matches ? true : false
+      this.device = result.matches ? 'mobile' : 'pc'
     })
+  }
 
-    this.responsive.observe([
-      Breakpoints.Medium,
-      Breakpoints.Large      
-      ])
-      .subscribe(result => {
-
-        this.isLaptop = false
-
-        if (result.matches) {
-          this.isLaptop = true
-        }
+  private getIsLaptop() {
+    this.breakpointService.getIsLaptop().subscribe(result => {
+      this.isLaptop = result.matches ? true : false
     })
   }
 

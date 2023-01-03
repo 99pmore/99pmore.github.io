@@ -1,5 +1,5 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
   selector: 'app-error404',
@@ -9,26 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class Error404Component implements OnInit {
 
   public text: string = '404'
-  public textSize = '10rem'
+  public textSize: string = '10rem'
 
-  public isPhone = false
+  public isMobile: boolean = false
 
   constructor(
-    private responsive: BreakpointObserver
+    private breakpointService: BreakpointService
     ) { }
 
   ngOnInit(): void {
-    this.responsive.observe([
-      Breakpoints.XSmall,
-      Breakpoints.Small,      
-      ])
-      .subscribe(result => {
-        this.isPhone = false
+    this.getIsMobile()
+  }
 
-        if (result.matches) {
-          this.isPhone = true
-          this.textSize = '5rem'
-        }
+  private getIsMobile() {
+    this.breakpointService.getIsMobile().subscribe(result => {
+      this.isMobile = result.matches ? true : false
+      this.textSize = result.matches ? '5rem' : '10rem'
     })
   }
 

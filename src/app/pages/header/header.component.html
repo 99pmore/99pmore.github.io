@@ -1,13 +1,13 @@
 <div [ngSwitch]="device">
-    <div *ngSwitchCase="'phone'">
+    <div *ngSwitchCase="'pc'">
         <app-menu></app-menu>
     </div>
-    <div *ngSwitchCase="'pc'">
+    <div *ngSwitchCase="'mobile'">
         <app-s-menu></app-s-menu>
     </div>
 </div>
 
-<header [ngClass]="{'is-phone': isPhone, 'is-laptop': isLaptop}">
+<header [ngClass]="{'is-mobile': isMobile, 'is-laptop': isLaptop}">
     <p class="open-tag">Soy</p>
     <div class="name">
         <h1 data-aos="zoom-out-right" data-aos-duration="950" data-aos-once="true">

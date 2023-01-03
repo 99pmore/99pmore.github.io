@@ -1,11 +1,11 @@
-<main [ngClass]="{'is-phone': isPhone}">
+<main [ngClass]="{'is-mobile': isMobile}">
     <div class="img">
         <img src="../../../assets/img/404/locke.gif" alt="Dibujo de John Lock (Lost)">
     </div>
     <div class="msg">
         <div class="code">
-            <h1 *ngIf="isPhone" [style.fontSize]="textSize" (mouseenter)="text = '4 8 15 16 23 42'; textSize='2.5rem'" (mouseleave)="text = '404'; textSize='5rem'">{{ text }}</h1>
-            <h1 *ngIf="!isPhone" [style.fontSize]="textSize" (mouseenter)="text = '4 8 15 16 23 42'; textSize='5rem'" (mouseleave)="text = '404'; textSize='10rem'">{{ text }}</h1>
+            <h1 *ngIf="isMobile" [style.fontSize]="textSize" (mouseenter)="text = '4 8 15 16 23 42'; textSize='2.5rem'" (mouseleave)="text = '404'; textSize='5rem'">{{ text }}</h1>
+            <h1 *ngIf="!isMobile" [style.fontSize]="textSize" (mouseenter)="text = '4 8 15 16 23 42'; textSize='5rem'" (mouseleave)="text = '404'; textSize='10rem'">{{ text }}</h1>
             <h2>Esta página no existe</h2>
         </div>
         <div class="return">
