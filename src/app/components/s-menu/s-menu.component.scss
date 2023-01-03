@@ -67,7 +67,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
     transition: all 0.6s;
 
@@ -83,7 +83,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 30px;
+            gap: 40px;
 
             li {
                 width: 100%;
@@ -124,6 +124,7 @@
             display: grid;
             justify-items: stretch;
             align-items: stretch;
+            gap: 30px;
     
             grid-template-columns: repeat(2, 50px);
             grid-auto-rows: 50px;
