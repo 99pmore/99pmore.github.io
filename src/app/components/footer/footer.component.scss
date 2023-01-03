@@ -1,68 +1,99 @@
 @import "../../../styles.scss";
 
 footer {
-    // background-color: $grey-sand;
     background-color: $ocean;
-    height: 200px;
+    min-height: 180px;
 
-    padding: 40px 20px;
+    padding: 40px;
     margin-left: 200px;
 
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    flex-wrap: wrap;
+    gap: 30px;
 
-    h3 {
-        // color: $ocean;
+    .comment-tag {
+        font-size: 1rem;
         color: white;
-        padding-bottom: 10px;
     }
 
-    a, p {
+    a {
         text-decoration: none;
         color: $turquoise;
-    }
 
-    a:hover {
-        text-shadow: 0 0 2px white;
+        &:hover {
+            text-shadow: 0 0 2px white;
+        }
     }
 
     .first-third {
+        width: 100%;
+
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         gap: 20px;
+
+        .location {
+            color: $turquoise;
+        }
     }
 
     .second-third {
+        width: 100%;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         align-self: center;
 
-        img {
-            // filter: invert(9%) sepia(90%) saturate(2527%) hue-rotate(173deg) brightness(98%) contrast(98%);
+        p {
+            color: white;
+            text-align: center;
         }
     }
 
     .third-third {
+        width: 100%;
+
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 40px;
 
         div {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: flex-end;
             flex-direction: column;
+
+            .comment-tag {
+                text-align: end;
+            }
         }
     }
 }
 
 .is-mobile {
+    min-height: 500px;
     margin-left: 0;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+
+    .third-third {
+        justify-content: space-between;
+
+        .links {
+            align-items: flex-start;
+
+            .comment-tag {
+                text-align: start;
+            }
+        }
+    }
 }
