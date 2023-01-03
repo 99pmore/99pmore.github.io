@@ -17,6 +17,7 @@ import { PortfolioLogoComponent } from './components/portfolio-logo/portfolio-lo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SMenuComponent } from './components/s-menu/s-menu.component';
 import { SButtonComponent } from './components/s-button/s-button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SButtonComponent } from './components/s-button/s-button.component';
     PortfolioLogoComponent,
     SMenuComponent,
     SButtonComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

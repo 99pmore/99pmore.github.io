@@ -1,0 +1,68 @@
+@import "../../../styles.scss";
+
+footer {
+    // background-color: $grey-sand;
+    background-color: $ocean;
+    height: 200px;
+
+    padding: 40px 20px;
+    margin-left: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    h3 {
+        // color: $ocean;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    a, p {
+        text-decoration: none;
+        color: $turquoise;
+    }
+
+    a:hover {
+        text-shadow: 0 0 2px white;
+    }
+
+    .first-third {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .second-third {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+
+        img {
+            // filter: invert(9%) sepia(90%) saturate(2527%) hue-rotate(173deg) brightness(98%) contrast(98%);
+        }
+    }
+
+    .third-third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+    }
+}
+
+.is-mobile {
+    margin-left: 0;
+}
