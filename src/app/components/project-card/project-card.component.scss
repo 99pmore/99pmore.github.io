@@ -32,6 +32,7 @@
         }
 
         .description {
+            box-shadow: 0 0 16px rgba(255, 255, 255, 0.75);
             pointer-events: all;
             opacity: 1;
 
@@ -197,13 +198,5 @@
         gap: 10px;
 
         transform: translateY(100px);
-    }
-}
-
-@keyframes change-colors2 {
-    from {
-        background-color: $grey-sand;
-    } to {
-        background-color: $sand;
     }
 }

@@ -24,5 +24,9 @@ li {
         transition: all 0.3s;
 
         @include clear-siblings();
+
+        &:hover {
+            box-shadow: 0 0 16px rgba(255, 255, 255, 0.75);
+        }
     }
 }
