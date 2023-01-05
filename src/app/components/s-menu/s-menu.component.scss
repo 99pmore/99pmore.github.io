@@ -51,6 +51,7 @@
 
 .nav-close {
     @include glassmorphism();
+    background: rgba(255, 255, 255, 0.25);
     border-radius: 0 25px 25px 0;
     color: white;
     backdrop-filter: blur(4px);
@@ -72,8 +73,10 @@
     transition: all 0.6s;
 
     .menu, .socials {
+        @include glassmorphism();
+        background: rgba(2, 118, 131, 0.3);
         width: 60%;
-        padding: 10px 20px;
+        padding: 20px;
 
         ul {
             height: 100%;
