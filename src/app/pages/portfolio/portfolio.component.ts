@@ -17,35 +17,35 @@ export class PortfolioComponent implements OnInit {
   public projects: Project[] = [
     {
       name: 'GoT API',
-      tools: [this.URL_LOGOS + '/angular-light.png', this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
+      tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: 'Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API "api.got.show", desarrollada en Angular',
-      image: this.URL_PROJECTS + '/got.png',
+      image: this.URL_PROJECTS + '/got.webp',
       link: 'https://api-got.web.app/'
     },
     {
       name: 'Mi web portfolio',
-      tools: [ this.URL_LOGOS + '/angular-light.png', this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
+      tools: [ this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: 'Web currículum y portfolio, desarrollada en Angular',
-      image: this.URL_PROJECTS + '/miweb-angular.png',
+      image: this.URL_PROJECTS + '/miweb-angular.webp',
       link: 'https://pablo-moreno-martin.web.app/'
     },
     {
       name: 'Mytho',
-      tools: [ this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
+      tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: 'Sitio web sobre mitología, desarrollado en HTML y SCSS',
       image: this.URL_PROJECTS + '/mytho.webp',
       link: 'https://99pmore.github.io/Mytho/'
     },
     {
       name: 'CV Web (desactualizado)',
-      tools: [ this.URL_LOGOS + '/html-light.png', this.URL_LOGOS + '/sass-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/git-light.png'],
+      tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: 'Web currículum y portfolio, desarrollado en HTML y SCSS',
       image: this.URL_PROJECTS + '/miweb.webp',
       link: 'https://99pmore.github.io/CV_Web/'
     },
     {
       name: 'Yourney',
-      tools: [ this.URL_LOGOS + '/swift-light.png', this.URL_LOGOS + '/java-light.png', this.URL_LOGOS + '/xcode-light.png', this.URL_LOGOS + '/visual-light.png', this.URL_LOGOS + '/spring-light.png', this.URL_LOGOS + '/mongo-light.png'],
+      tools: [ this.URL_LOGOS + '/swift-light.webp', this.URL_LOGOS + '/java-light.webp', this.URL_LOGOS + '/xcode-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/spring-light.webp', this.URL_LOGOS + '/mongo-light.webp'],
       description: '(TFG) Aplicación de gestión de viajes para iOS, desarrollado en Swift para el Front y en Java Spring Boot para el Back',
       image: this.URL_PROJECTS + '/yourney.webp',
       link: 'https://drive.google.com/file/d/1zWr4npBiY1QVoZ0Js8NGUcRvLfWliwWs/view'
@@ -55,11 +55,11 @@ export class PortfolioComponent implements OnInit {
   public logos: Logo[] = [
     {
       name: 'Mi logo',
-      logo: this.URL_PROJECTS_LOGOS + '/mylogo.jpg'
+      logo: this.URL_PROJECTS_LOGOS + '/mylogo.webp'
     },
     {
       name: 'Boda J&M',
-      logo: this.URL_PROJECTS_LOGOS + '/wedding-light.png'
+      logo: this.URL_PROJECTS_LOGOS + '/wedding-light.webp'
     },
     {
       name: 'Mytho',
@@ -75,7 +75,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       name: 'Sit&Com',
-      logo: this.URL_PROJECTS_LOGOS + '/sitcom.png'
+      logo: this.URL_PROJECTS_LOGOS + '/sitcom.webp'
     },
     {
       name: 'RFEF',
@@ -83,7 +83,7 @@ export class PortfolioComponent implements OnInit {
     },
     {
       name: 'My Thot',
-      logo: this.URL_PROJECTS_LOGOS + '/mythot.jpg'
+      logo: this.URL_PROJECTS_LOGOS + '/mythot.webp'
     },
   ]
 

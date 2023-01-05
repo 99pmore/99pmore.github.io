@@ -15,19 +15,19 @@ export class AboutComponent implements OnInit {
       date: 'may. 2022 - actualidad',
       title: 'Máster en Desarrollo Web FullStack',
       location: 'Escuela Internacional de Posgrados y UEMC',
-      logo: '../../../assets/img/eip-light.png'
+      logo: '../../../assets/img/inst-logos/eip-light.webp'
     },
     {
       date: 'sep. 2017 - ene. 2022',
       title: 'Grado en Ingeniería Informática',
       location: 'Universidad Politécnica de Madrid',
-      logo: '../../../assets/img/upm-light.png'
+      logo: '../../../assets/img/inst-logos/upm-light.webp'
     },
     {
       date: '2015 - 2017',
       title: 'Bachillerato tecnológico',
       location: 'CEU San Pablo Montepríncipe',
-      logo: '../../../assets/img/ceu-light.png'
+      logo: '../../../assets/img/inst-logos/ceu-light.webp'
     }
   ]
 
@@ -36,7 +36,7 @@ export class AboutComponent implements OnInit {
       date: 'sep. 2021 - mar. 2022',
       title: 'Prácticas en Desarrollo Móvil',
       location: 'INETUM España',
-      logo: '../../../assets/img/inetum-light.png'
+      logo: '../../../assets/img/inst-logos/inetum-light.webp'
     }
   ]
 
@@ -44,22 +44,22 @@ export class AboutComponent implements OnInit {
     {
       title: 'IT Specialist - JavaScript',
       location: 'Certiport - A Pearson VUE Business',
-      logo: '../../../assets/img/it-light.png'
+      logo: '../../../assets/img/inst-logos/it-light.webp'
     },
     {
       title: 'Curso de Introducción al Desarrollo Web II certificado por el IEI de la Universidad de Alicante',
       location: 'Google Actívate',
-      logo: '../../../assets/img/google-light.png'
+      logo: '../../../assets/img/inst-logos/google-light.webp'
     },
     {
       title: 'Curso de Introducción al Desarrollo Web I certificado por el IEI de la Universidad de Alicante',
       location: 'Google Actívate',
-      logo: '../../../assets/img/google-light.png'
+      logo: '../../../assets/img/inst-logos/google-light.webp'
     },
     {
       title: 'B2 First Certificate in English',
       location: 'Cambridge University',
-      logo: '../../../assets/img/cambridge-light.png'
+      logo: '../../../assets/img/inst-logos/cambridge-light.webp'
     }
   ]
 

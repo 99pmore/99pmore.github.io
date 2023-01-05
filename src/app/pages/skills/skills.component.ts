@@ -12,93 +12,93 @@ export class SkillsComponent implements OnInit {
 
   public languages: Skill[] = [
     {
-      logo: '../../../assets/img/logos/html-light.png',
+      logo: '../../../assets/img/logos/html-light.webp',
       name: 'HTML'
     },
     {
-      logo: '../../../assets/img/logos/css-light.png',
+      logo: '../../../assets/img/logos/css-light.webp',
       name: 'CSS'
     },
     {
-      logo: '../../../assets/img/logos/sass-light.png',
+      logo: '../../../assets/img/logos/sass-light.webp',
       name: 'SASS'
     },
     {
-      logo: '../../../assets/img/logos/js-light.png',
+      logo: '../../../assets/img/logos/js-light.webp',
       name: 'JavaScript'
     },
     {
-      logo: '../../../assets/img/logos/ts-light.png',
+      logo: '../../../assets/img/logos/ts-light.webp',
       name: 'TypeScript'
     },
     {
-      logo: '../../../assets/img/logos/java-light.png',
+      logo: '../../../assets/img/logos/java-light.webp',
       name: 'Java'
     },
     {
-      logo: '../../../assets/img/logos/swift-light.png',
+      logo: '../../../assets/img/logos/swift-light.webp',
       name: 'Swift'
     },
     {
-      logo: '../../../assets/img/logos/c-light.png',
+      logo: '../../../assets/img/logos/c-light.webp',
       name: 'C'
     },
   ]
 
   public tools: Skill[] = [
     {
-      logo: '../../../assets/img/logos/angular-light.png',
+      logo: '../../../assets/img/logos/angular-light.webp',
       name: 'Angular'
     },
     {
-      logo: '../../../assets/img/logos/bootstrap-light.png',
+      logo: '../../../assets/img/logos/bootstrap-light.webp',
       name: 'Bootstrap'
     },
     {
-      logo: '../../../assets/img/logos/tailwind-light.png',
+      logo: '../../../assets/img/logos/tailwind-light.webp',
       name: 'Tailwind'
     },
     {
-      logo: '../../../assets/img/logos/spring-light.png',
+      logo: '../../../assets/img/logos/spring-light.webp',
       name: 'Spring Boot'
     },
     {
-      logo: '../../../assets/img/logos/mysql-light.png',
+      logo: '../../../assets/img/logos/mysql-light.webp',
       name: 'MySQL'
     },
     {
-      logo: '../../../assets/img/logos/mongo-light.png',
+      logo: '../../../assets/img/logos/mongo-light.webp',
       name: 'Mongo'
     },
     {
-      logo: '../../../assets/img/logos/git-light.png',
+      logo: '../../../assets/img/logos/git-light.webp',
       name: 'Git'
     },
   ]
 
   public softwares: Skill[] = [
     {
-      logo: '../../../assets/img/logos/visual-light.png',
+      logo: '../../../assets/img/logos/visual-light.webp',
       name: 'Visual Studio Code'
     },
     {
-      logo: '../../../assets/img/logos/xcode-light.png',
+      logo: '../../../assets/img/logos/xcode-light.webp',
       name: 'Xcode'
     },
     {
-      logo: '../../../assets/img/logos/androidstudio-light.png',
+      logo: '../../../assets/img/logos/androidstudio-light.webp',
       name: 'Android Studio'
     },
     {
-      logo: '../../../assets/img/logos/postman-light.png',
+      logo: '../../../assets/img/logos/postman-light.webp',
       name: 'PostMan'
     },
     {
-      logo: '../../../assets/img/logos/netbeans-light.png',
+      logo: '../../../assets/img/logos/netbeans-light.webp',
       name: 'NetBeans'
     },
     {
-      logo: '../../../assets/img/logos/justinmind-light.png',
+      logo: '../../../assets/img/logos/justinmind-light.webp',
       name: 'Just in Mind'
     },
   ]
