@@ -44,7 +44,7 @@ main {
             }
 
             #profile-img {
-                background: url(../../../assets/img/me.png) no-repeat center / cover;
+                background: url(../../../assets/img/me.webp) no-repeat center / cover;
                 border-radius: 25px;
                 opacity: 0.85;
 
@@ -54,7 +54,7 @@ main {
                 transition: all 0.3s;
 
                 &:hover {
-                    background-image: url(../../../assets/img/profile.jpg);
+                    background-image: url(../../../assets/img/profile.webp);
                     transform: translateY(-20px);
                     opacity: 0.95;
                 }
