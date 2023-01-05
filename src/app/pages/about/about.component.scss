@@ -15,6 +15,7 @@ main {
             @include glassmorphism();
             width: 100%;
             padding: 40px 60px;
+            margin: 40px 0;
 
             display: flex;
             justify-content: center;
@@ -125,7 +126,7 @@ main {
 
     section {
         #about-me {
-            padding: 20px 10px;
+            padding: 30px 15px;
             width: 100%;
 
             flex-direction: column;
