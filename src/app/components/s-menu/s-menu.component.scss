@@ -51,7 +51,8 @@
 }
 
 .nav-close {
-    background-color: rgba(2, 118, 131, 0.85);
+    // background-color: rgba(2, 118, 131, 0.85);
+    @include glassmorphism();
     color: white;
     box-shadow: 0 0 40px $aqua;
     backdrop-filter: blur(4px);
