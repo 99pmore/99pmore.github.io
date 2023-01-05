@@ -51,7 +51,6 @@
 
 .nav-close {
     @include glassmorphism();
-    background-color: rgba(2, 118, 131, 0.85);
     border-radius: 0 25px 25px 0;
     color: white;
     backdrop-filter: blur(4px);
