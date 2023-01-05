@@ -1,8 +1,7 @@
 @import "../../../styles.scss";
 
 .bg-close {
-    // background-color: rgba(108, 190, 191, 0.25);
-    @include glassmorphism();
+    background-color: rgba(108, 190, 191, 0.25);
     opacity: 0;
 
     visibility: hidden;
@@ -43,7 +42,7 @@
     z-index: 105;
 
     span {
-        background-color: $ocean;
+        background-color: white;
 
         width: 20px;
         height: 2px;
@@ -51,10 +50,10 @@
 }
 
 .nav-close {
-    // background-color: rgba(2, 118, 131, 0.85);
     @include glassmorphism();
+    background-color: rgba(2, 118, 131, 0.85);
+    border-radius: 0 25px 25px 0;
     color: white;
-    box-shadow: 0 0 40px $aqua;
     backdrop-filter: blur(4px);
 
     width: 0;
