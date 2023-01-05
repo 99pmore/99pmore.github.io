@@ -26,7 +26,8 @@
         }
 
         .name {
-            background-color: $ocean;
+            @include glassmorphism();
+            background-color: rgba(2, 51, 62, 0.5);
             transform: translateY(-300px);
         }
 
@@ -92,8 +93,8 @@
     }
 
     .name {
-        background-color: $aqua;
-        border-radius: 25px;
+        @include glassmorphism();
+        background-color: rgba(2, 118, 131, 0.5);
 
         padding: 10px 20px;
         margin-bottom: -60px;
