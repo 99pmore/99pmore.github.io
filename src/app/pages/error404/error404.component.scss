@@ -1,6 +1,7 @@
 @import "../../../styles.scss";
 
 main {
+    background-color: white;
     padding: 5% 10%;
     height: 100vh;
 
@@ -21,13 +22,11 @@ main {
 
         .code {
             h1 {
-                // font-size: 10rem;
                 color: $aqua;
                 text-align: center;
             }
         
             h2 {
-                // font-size: 2rem;
                 color: $grey-sand;
                 text-align: center;
             }
@@ -42,6 +41,51 @@ main {
 
             p {
                 font-size: 1.5rem;
+            }
+
+            button {
+                cursor: pointer;
+                font-family: $font-text;
+                font-size: 1rem;
+            
+                @include glassmorphism();
+                background-color: rgba(2, 118, 131, 0.25);
+                border: 1px solid rgba(2, 51, 62, 0.3);
+                color: $ocean;
+                overflow: hidden;
+            
+                width: 120px;
+                height: 60px;
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            
+                transition: linear 0.3s;
+            
+                &:is(:hover,:focus) {
+                    color: white;
+                    transform: translateY(-10px);
+                }
+                  
+                &::after {
+                    background-color: rgba(2, 51, 62, 0.25);
+                    content: '';
+            
+                    position: absolute;
+                    inset: 0;
+                    z-index: -1;
+            
+                    transform-origin: left;
+                    transform: scaleX(0);
+            
+                    transition: linear 0.3s;
+                }
+                  
+                &:is(:hover, :focus)::after {
+                    transform: scaleX(1);
+                }
             }
         }
     }
