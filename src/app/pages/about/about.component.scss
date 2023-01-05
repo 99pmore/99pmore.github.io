@@ -12,7 +12,9 @@ main {
 
     section {
         #about-me {
+            @include glassmorphism();
             width: 100%;
+            padding: 40px 60px;
 
             display: flex;
             justify-content: center;
@@ -43,7 +45,7 @@ main {
             #profile-img {
                 background: url(../../../assets/img/me.png) no-repeat center / cover;
                 border-radius: 25px;
-                opacity: 0.75;
+                opacity: 0.85;
 
                 width: 100%;
                 aspect-ratio: 4/3;
@@ -53,7 +55,7 @@ main {
                 &:hover {
                     background-image: url(../../../assets/img/profile.jpg);
                     transform: translateY(-20px);
-                    opacity: 0.85;
+                    opacity: 0.95;
                 }
             }
         }
@@ -123,6 +125,7 @@ main {
 
     section {
         #about-me {
+            padding: 20px 10px;
             width: 100%;
 
             flex-direction: column;
