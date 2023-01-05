@@ -24,6 +24,10 @@ export class HeaderComponent implements OnInit {
     window.scroll(0,0)
   }
 
+  public goToTop() {
+    window.scroll(0,0)
+  }
+
   private getIsMobile() {
     this.breakpointService.getIsMobile().subscribe(result => {
       this.hideSideMenu = result.matches ? true : false
