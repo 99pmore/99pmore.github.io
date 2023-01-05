@@ -1,7 +1,8 @@
 @import "../../../styles.scss";
 
 .bg-close {
-    background-color: rgba(108, 190, 191, 0.25);
+    // background-color: rgba(108, 190, 191, 0.25);
+    @include glassmorphism();
     opacity: 0;
 
     visibility: hidden;
