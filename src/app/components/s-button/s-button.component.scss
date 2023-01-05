@@ -6,10 +6,8 @@ button {
     font-family: $font-text;
     font-size: 1rem;
 
-    background: white;
-    color: $dark-grey;
-    border: none;
-    border-radius: 25px;
+    @include glassmorphism();
+    color: white;
     overflow: hidden;
 
     width: 80px;
@@ -23,13 +21,12 @@ button {
     transition: linear 0.3s;
 
     &:is(:hover,:focus) {
-        color: $ocean;
-        border: none;
-        box-shadow: 0 40px 40px -20px $ocean;
+        border: 1px solid rgba(255, 255, 255, 0.3);
         transform: translateY(-10px);
     }
       
     &::after {
+        background: rgba(255, 255, 255, 0.25);
         content: '';
 
         position: absolute;
@@ -44,7 +41,6 @@ button {
       
     &:is(:hover, :focus)::after {
         transform: scaleX(1);
-        animation: change-colors2 0.9s ease-in forwards;
     }
 }
 

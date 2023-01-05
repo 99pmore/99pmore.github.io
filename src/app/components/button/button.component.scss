@@ -6,9 +6,7 @@ button {
     font-size: 1rem;
     color: white;
 
-    background: none;
-    border: solid 1px rgba(255, 255, 255, 0.3);
-    border-radius: 25px;
+    @include glassmorphism();
     overflow: hidden;
 
     width: 120px;
@@ -22,13 +20,14 @@ button {
     transition: linear 0.3s;
 
     &:is(:hover,:focus) {
-        border: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: $aqua;
         transform: translateY(-10px);
     }
       
     &::after {
+        background: rgba(255, 255, 255, 0.25);
         content: '';
-        @include glassmorphism();
 
         position: absolute;
         inset: 0;
