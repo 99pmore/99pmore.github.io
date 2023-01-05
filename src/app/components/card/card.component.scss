@@ -1,14 +1,12 @@
 @import "../../../styles.scss";
 
 .card {
-    background-color: $grey-sand;
+    @include glassmorphism();
     color: white;
     border-radius: 25px;
-    box-shadow: 0 30px 30px -20px $grey-sand;
     cursor: default;
 
     height: 500px;
-    // width: 300px;
     aspect-ratio: 9/16;
     padding: 40px;
 

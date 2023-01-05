@@ -12,9 +12,8 @@ li {
     transition: all 0.3s;
 
     img {
-        background-color: $grey-sand;
+        @include glassmorphism();
         border-radius: 25px;
-        box-shadow: 0 30px 30px -20px $grey-sand;
 
         padding: 20px;
 

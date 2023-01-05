@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 footer {
-    background-color: $ocean;
+    @include glassmorphism();
     min-height: 180px;
 
     padding: 40px;
@@ -20,7 +20,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: $turquoise;
+        color: white;
 
         &:hover {
             text-shadow: 0 0 2px white;
@@ -37,7 +37,7 @@ footer {
         gap: 20px;
 
         .location {
-            color: $turquoise;
+            color: white;
         }
     }
 

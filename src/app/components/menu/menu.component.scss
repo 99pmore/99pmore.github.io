@@ -1,9 +1,9 @@
 @import "../../../styles.scss";
 
 nav {
-    background-color: $aqua;
+    @include glassmorphism();
+    border-radius: 0 25px 25px 0;
     color: white;
-    box-shadow: 0 0 40px $aqua;
 
     width: 200px;
     height: 100vh;
@@ -23,16 +23,10 @@ nav {
         img {
             padding: 10px;
             transition: all 0.3s;
-
-            &:hover {
-                @include neumorphism($aqua, #02646f, #028897);
-            }
         }
     }
 
     .menu, .socials {
-        @include neumorphism($aqua, #02646f, #028897);
-
         width: 80%;
         padding: 40px;
 
@@ -53,7 +47,9 @@ nav {
             gap: 20px;
 
             li {
-                @include s-neumorphism($silver, #b9bdbe, #fbffff);
+                @include glassmorphism();
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 16px;
 
                 width: 100%;
 
@@ -65,9 +61,6 @@ nav {
                 transition: all 0.3s;
 
                 &:hover {
-                    box-shadow: inset 20px 20px 30px #b1b6b8,
-                    inset -20px -20px 30px #fbffff;
-
                     span {
                         visibility: visible;
                     }
@@ -111,7 +104,6 @@ nav {
                     position: absolute;
                     top: 25%;
                     left: 110%;
-                    z-index: 1;
 
                     &::after {
                         content: "";
