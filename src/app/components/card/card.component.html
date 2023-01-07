@@ -13,6 +13,7 @@
 </div>
 
 <div class="card" *ngIf="certification" [ngClass]="{'is-phone': isPhone}">
+    <p>{{ certification.date }}</p>
     <h2>{{ certification.title }}</h2>
     <h3>{{ certification.location }}</h3>
     <img [src]="certification.logo" alt="Logo" height="120">
