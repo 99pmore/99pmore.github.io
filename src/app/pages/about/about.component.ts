@@ -48,21 +48,25 @@ export class AboutComponent implements OnInit {
       logo: '../../../assets/img/inst-logos/capacitate-light.webp'
     },
     {
+      date: '17 nov. 2022',
       title: 'IT Specialist - JavaScript',
       location: 'Certiport - A Pearson VUE Business',
       logo: '../../../assets/img/inst-logos/it-light.webp'
     },
     {
+      date: '13 abr. 2022',
       title: 'Curso de Introducción al Desarrollo Web II certificado por el IEI de la Universidad de Alicante',
       location: 'Google Actívate',
       logo: '../../../assets/img/inst-logos/google-light.webp'
     },
     {
+      date: '31 mar. 2022',
       title: 'Curso de Introducción al Desarrollo Web I certificado por el IEI de la Universidad de Alicante',
       location: 'Google Actívate',
       logo: '../../../assets/img/inst-logos/google-light.webp'
     },
     {
+      date: '2017',
       title: 'B2 First Certificate in English',
       location: 'Cambridge University',
       logo: '../../../assets/img/inst-logos/cambridge-light.webp'
