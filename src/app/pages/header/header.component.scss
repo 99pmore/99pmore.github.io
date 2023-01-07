@@ -59,6 +59,10 @@ header {
         position: fixed;
         right: 40px;
         bottom: 40px;
+
+        &:hover {
+            box-shadow: 0 0 16px rgba(255, 255, 255, 0.75);
+        }
     
         i {
             color: white;
