@@ -42,6 +42,12 @@ export class AboutComponent implements OnInit {
 
   public certifications: Card[] = [
     {
+      date: 'Cursando',
+      title: 'Desarrollador de JavaScript (React)',
+      location: 'Capacítate para el empleo - Fundación Carlos Slim',
+      logo: '../../../assets/img/inst-logos/capacitate-light.webp'
+    },
+    {
       title: 'IT Specialist - JavaScript',
       location: 'Certiport - A Pearson VUE Business',
       logo: '../../../assets/img/inst-logos/it-light.webp'
