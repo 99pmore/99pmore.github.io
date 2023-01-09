@@ -42,10 +42,16 @@ export class AboutComponent implements OnInit {
 
   public certifications: Card[] = [
     {
-      date: 'Cursando',
+      date: '8 ene. 2023',
       title: 'Desarrollador de JavaScript (React)',
       location: 'Capacítate para el empleo - Fundación Carlos Slim',
       logo: '../../../assets/img/inst-logos/capacitate-light.webp'
+    },
+    {
+      date: '9 ene. 2023',
+      title: 'React JS Desde Cero',
+      location: 'Udemy',
+      logo: '../../../assets/img/inst-logos/udemy-light.webp'
     },
     {
       date: '17 nov. 2022',
