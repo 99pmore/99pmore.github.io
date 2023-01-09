@@ -48,7 +48,7 @@ export class PortfolioComponent implements OnInit {
       tools: [ this.URL_LOGOS + '/swift-light.webp', this.URL_LOGOS + '/java-light.webp', this.URL_LOGOS + '/xcode-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/spring-light.webp', this.URL_LOGOS + '/mongo-light.webp'],
       description: '(TFG) Aplicación de gestión de viajes para iOS, desarrollado en Swift para el Front y en Java Spring Boot para el Back',
       image: this.URL_PROJECTS + '/yourney.webp',
-      link: 'https://drive.google.com/file/d/1zWr4npBiY1QVoZ0Js8NGUcRvLfWliwWs/view'
+      link: 'https://github.com/99pmore/Yourney'
     },
   ]
 
