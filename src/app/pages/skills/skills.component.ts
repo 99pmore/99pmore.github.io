@@ -51,6 +51,10 @@ export class SkillsComponent implements OnInit {
       name: 'Angular'
     },
     {
+      logo: '../../../assets/img/logos/react-light.webp',
+      name: 'React'
+    },
+    {
       logo: '../../../assets/img/logos/bootstrap-light.webp',
       name: 'Bootstrap'
     },
