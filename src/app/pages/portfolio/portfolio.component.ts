@@ -16,9 +16,16 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'Harry Potter API',
+      tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
+      description: "Web de información sobre personajes Harry Potter, realizando peticiones HTTP a la API 'hp-api.onrender', desarrollada en React",
+      image: this.URL_PROJECTS + '/harrypotter.webp',
+      link: 'https://api-harrypotter.web.app/'
+    },
+    {
       name: 'GoT API',
       tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: 'Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API "api.got.show", desarrollada en Angular',
+      description: "Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API 'api.got.show', desarrollada en Angular",
       image: this.URL_PROJECTS + '/got.webp',
       link: 'https://api-got.web.app/'
     },
