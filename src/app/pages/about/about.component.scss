@@ -43,12 +43,12 @@ main {
                 }
             }
 
-            #profile-img {
+            .profile-img {
                 background: url(../../../assets/img/me.webp) no-repeat center / cover;
                 border-radius: 25px;
                 opacity: 0.85;
 
-                width: 100%;
+                width: 75%;
                 aspect-ratio: 4/3;
 
                 transition: all 0.3s;
@@ -143,6 +143,10 @@ main {
                         flex-direction: column;
                     }
                 }
+            }
+
+            .profile-img {
+                width: 100%;
             }
         }
 
