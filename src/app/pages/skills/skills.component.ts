@@ -75,6 +75,10 @@ export class SkillsComponent implements OnInit {
       name: 'Mongo'
     },
     {
+      logo: '../../../assets/img/logos/firebase-light.webp',
+      name: 'Firebase'
+    },
+    {
       logo: '../../../assets/img/logos/git-light.webp',
       name: 'Git'
     },
