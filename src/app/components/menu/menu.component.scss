@@ -27,7 +27,7 @@ nav {
 
             &:hover {
                 @include glassmorphism();
-                box-shadow: 0 0 16px rgba(255, 255, 255, 0.75);
+                // box-shadow: 0 0 16px rgba(255, 255, 255, 0.75);
             }
         }
     }
