@@ -1,0 +1,69 @@
+@mixin glassmorphism() {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@mixin create-tag() {
+    .open-tag, .close-tag {
+        font-family: $font-tag; 
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        color: white;
+        cursor: default;
+
+        &::after {
+            content: '>';
+        }
+    }
+
+    .open-tag {
+        &::before {
+            content: '<';
+        }
+    }
+
+    .close-tag {
+        &::before {
+            content: '</';
+        }
+    }
+}
+
+@mixin create-comment-tag() {
+    .comment-tag {
+        font-family: $font-tag; 
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: default;
+
+        &::before {
+            content: '<!--';
+        }
+
+        &::after {
+            content: '-->';
+        }
+    }
+}
+
+@mixin blur-siblings() {
+    .blur:not(:hover) {
+        filter: blur(4px);
+        opacity: 0.5;
+
+        transition: all 0.3s;
+    }
+}
+
+@mixin clear-siblings() {
+    &:hover {
+        transform: translateY(-20px);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
