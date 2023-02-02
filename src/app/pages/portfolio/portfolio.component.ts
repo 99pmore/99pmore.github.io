@@ -16,10 +16,10 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
-      name: 'Lists&Notes App (En desarrollo)',
+      name: 'Jot-It',
       tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: "App web para crear listas y notas, desarrollada en React y con almacenamiento en Firebase",
-      image: this.URL_PROJECTS + '/listsandnotes.webp',
+      description: "App web para gestión de listas y notas, desarrollada en React y con almacenamiento en Firebase",
+      image: this.URL_PROJECTS + '/jotit.webp',
       link: 'https://notes-and-lists-app.web.app/'
     },
     {
@@ -70,6 +70,10 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Mi logo',
       logo: this.URL_PROJECTS_LOGOS + '/mylogo.webp'
+    },
+    {
+      name: 'Jot-It',
+      logo: this.URL_PROJECTS_LOGOS + '/jotit.webp'
     },
     {
       name: 'Boda J&M',
