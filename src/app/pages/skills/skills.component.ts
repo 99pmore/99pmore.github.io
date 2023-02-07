@@ -32,6 +32,10 @@ export class SkillsComponent implements OnInit {
       name: 'TypeScript'
     },
     {
+      logo: '../../../assets/img/logos/php-light.webp',
+      name: 'PHP'
+    },
+    {
       logo: '../../../assets/img/logos/java-light.webp',
       name: 'Java'
     },
