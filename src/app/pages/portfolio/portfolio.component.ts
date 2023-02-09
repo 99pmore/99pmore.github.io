@@ -16,6 +16,13 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'Flags quiz game',
+      tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
+      description: "Juego de adivinar banderas del mundo, desarrollado en Angular",
+      image: this.URL_PROJECTS + '/countriesgame.webp',
+      link: 'https://flags-quiz-game.web.app/'
+    },
+    {
       name: 'Jot-It',
       tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: "App web para gestión de listas y notas, desarrollada en React y con almacenamiento en Firebase",
