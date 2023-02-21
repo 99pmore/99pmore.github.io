@@ -42,6 +42,12 @@ export class AboutComponent implements OnInit {
 
   public certifications: Card[] = [
     {
+      // date: '21 feb. 2023',
+      title: 'React Hooks esencial',
+      location: 'LinkedIn Learning',
+      logo: '../../../assets/img/inst-logos/linkedin-light.webp'
+    },
+    {
       // date: '8 ene. 2023',
       title: 'Curso Desarrollador de JavaScript (React)',
       location: 'Capacítate para el empleo - Fundación Carlos Slim',
