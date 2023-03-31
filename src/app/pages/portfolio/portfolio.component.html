@@ -13,7 +13,9 @@
 
         <section class="projects-grid">
             <p class="comment-tag">Todos los proyectos están disponibles en Github</p>
-            <app-project-card *ngFor="let project of projects" [project]="project" data-aos="fade-down" data-aos-duration="750" data-aos-offset="50" data-aos-once="true" data-aos-delay="250"></app-project-card>
+            <div class="projects">
+                <app-project-card *ngFor="let project of projects" [project]="project" data-aos="fade-down" data-aos-duration="750" data-aos-offset="50" data-aos-once="true" data-aos-delay="250"></app-project-card>
+            </div>
         </section>
         
         <section class="logos">

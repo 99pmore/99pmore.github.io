@@ -2,13 +2,14 @@
 
 main {
     overflow: hidden;
-    padding: 5% 10%;
+    // padding: 5% 10%;
+    padding: 100px 60px 100px 80px;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    margin-left: 200px;
+    margin-left: 250px;
 
     section {
         width: 100%;
@@ -43,7 +44,7 @@ main {
     margin-left: 0;
 
     .open-tag, .close-tag {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     section {
@@ -54,7 +55,7 @@ main {
                 padding: 20px 0;
 
                 .comment-tag {
-                    font-size: 1.25rem;
+                    font-size: 1rem;
                 }
 
                 ul {

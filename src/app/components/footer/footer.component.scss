@@ -13,9 +13,12 @@ footer {
     align-items: flex-start;
     gap: 30px;
 
+    position: sticky;
+    z-index: 60;
+
     .comment-tag {
         font-size: 1rem;
-        color: white;
+        color: pink;
     }
 
     a {
@@ -23,7 +26,7 @@ footer {
         color: white;
 
         &:hover {
-            text-shadow: 0 0 2px white;
+            text-shadow: 0 0 2px pink;
         }
     }
 

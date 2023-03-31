@@ -10,8 +10,8 @@
 @mixin create-tag() {
     .open-tag, .close-tag {
         font-family: $font-tag; 
-        font-size: 1.25rem;
-        letter-spacing: 6px;
+        font-size: 1.1rem;
+        letter-spacing: 2px;
         color: pink;
         cursor: default;
 
@@ -40,7 +40,7 @@
     .comment-tag {
         font-family: $font-tag; 
         font-size: 1rem;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
         color: rgba(255, 192, 203, 0.5);
         cursor: default;
 
