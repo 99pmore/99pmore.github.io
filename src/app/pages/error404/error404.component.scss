@@ -22,12 +22,12 @@ main {
 
         .code {
             h1 {
-                color: $aqua;
+                color: #334;
                 text-align: center;
             }
         
             h2 {
-                color: $grey-sand;
+                color: pink;
                 text-align: center;
             }
         }
@@ -49,9 +49,9 @@ main {
                 font-size: 1rem;
             
                 @include glassmorphism();
-                background-color: rgba(2, 118, 131, 0.25);
-                border: 1px solid rgba(2, 51, 62, 0.3);
-                color: $ocean;
+                background-color: rgba(51, 51, 68, 1);
+                border: 1px solid rgba(255, 192, 203, 0.3);
+                color: white;
                 overflow: hidden;
             
                 width: 120px;
@@ -70,7 +70,7 @@ main {
                 }
                   
                 &::after {
-                    background-color: rgba(2, 51, 62, 0.25);
+                    background-color: rgba(255, 192, 203, 0.75);
                     content: '';
             
                     position: absolute;

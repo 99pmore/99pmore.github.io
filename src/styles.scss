@@ -2,7 +2,7 @@
 
 // F O N T S
 
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap');
 
 
@@ -27,9 +27,7 @@
 }
 
 body {
-    background: rgb(2,118,131);
-    background: linear-gradient(45deg, rgba(2,118,131,1) 0%, rgba(108,190,191,1) 50%, rgba(231,210,207,1) 100%);
-    // background: linear-gradient(60deg, #02333e 0%, #027683 25%, #6cbebf 50%, #c7cecb 75%, #e7d2cf 100%);
+    background: #334;
     background-attachment: fixed;
     color: $dark-grey;
 
@@ -41,16 +39,16 @@ body {
     @include create-comment-tag();
 
     &::-webkit-scrollbar {
-        background: linear-gradient(45deg, rgba(2,118,131,0.5) 0%, rgba(108,190,191,0.5) 50%, rgba(231,210,207,0.5) 100%);
+        background: #334;
         width: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.75);
+        background: rgba(255, 192, 203, 0.75);
         border-radius: 6px;
 
         &:hover {
-            background: white;
+            background: pink;
         }
     }
 }

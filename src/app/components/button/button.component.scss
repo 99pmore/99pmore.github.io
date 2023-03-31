@@ -4,6 +4,7 @@ button {
     cursor: pointer;
     font-family: $font-text;
     font-size: 1rem;
+    background-color: transparent;
     color: white;
 
     @include glassmorphism();
@@ -19,14 +20,13 @@ button {
 
     transition: linear 0.3s;
 
-    &:is(:hover,:focus) {
+    &:is(:hover, :focus) {
         border: 1px solid rgba(255, 255, 255, 0.3);
-        color: $aqua;
         transform: translateY(-10px);
     }
       
     &::after {
-        background: rgba(255, 255, 255, 0.25);
+        background: rgba(255, 192, 203, 0.5);
         content: '';
 
         position: absolute;
