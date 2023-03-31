@@ -2,7 +2,7 @@
 
 nav {
     @include glassmorphism();
-    border-radius: 25px;
+    border-radius: 0 25px 25px 0;
     color: white;
 
     width: 250px;
