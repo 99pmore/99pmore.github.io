@@ -16,6 +16,13 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'SQLibrary',
+      tools: [this.URL_LOGOS + '/php-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/tailwind-light.webp', this.URL_LOGOS + '/visual-light.webp'],
+      description: "Sistema CRUD para gestión de libros, desarrollado en PHP, MySQL y usando Tailwind para los estilos",
+      image: this.URL_PROJECTS + '/sqlibrary.webp',
+      link: 'https://github.com/99pmore/SQLibrary'
+    },
+    {
       name: 'Flags quiz game',
       tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: "Juego de adivinar banderas del mundo, desarrollado en Angular",
