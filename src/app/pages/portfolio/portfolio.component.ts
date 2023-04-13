@@ -43,13 +43,13 @@ export class PortfolioComponent implements OnInit {
       image: this.URL_PROJECTS + '/got.webp',
       link: 'https://api-got.web.app/'
     },
-    {
-      name: 'Mi web portfolio',
-      tools: [ this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: 'Web currículum y portfolio, desarrollada en Angular',
-      image: this.URL_PROJECTS + '/miweb-angular.webp',
-      link: 'https://pablo-moreno-martin.web.app/'
-    },
+    // {
+    //   name: 'Mi web portfolio',
+    //   tools: [ this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
+    //   description: 'Web currículum y portfolio, desarrollada en Angular',
+    //   image: this.URL_PROJECTS + '/miweb-angular.webp',
+    //   link: 'https://pablo-moreno-martin.web.app/'
+    // },
     {
       name: 'Mytho',
       tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
