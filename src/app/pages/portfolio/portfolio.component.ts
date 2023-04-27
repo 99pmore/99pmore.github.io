@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Goodtravels (En desarrollo)',
       tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/visual-light.webp'],
-      description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarollado en React, Express.js y MongoDB",
+      description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarrollado en React, Express.js y MongoDB",
       image: this.URL_PROJECTS + '/goodtravels.webp',
       link: 'https://goodtravels-app.web.app/'
     },
