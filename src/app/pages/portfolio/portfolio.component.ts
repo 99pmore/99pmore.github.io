@@ -16,8 +16,8 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
-      name: 'Goodtravels',
-      tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/visual-light.webp'],
+      name: 'Goodtravels (En desarrollo)',
+      tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/visual-light.webp'],
       description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarollado en React, Express.js y MongoDB",
       image: this.URL_PROJECTS + '/goodtravels.webp',
       link: 'https://goodtravels-app.web.app/'
@@ -88,45 +88,49 @@ export class PortfolioComponent implements OnInit {
   ]
 
   public logos: Logo[] = [
-    {
-      name: 'Mi logo',
-      logo: this.URL_PROJECTS_LOGOS + '/mylogo.webp'
-    },
-    {
-      name: 'Jot-It',
-      logo: this.URL_PROJECTS_LOGOS + '/jotit.webp'
-    },
-    {
-      name: 'Boda J&M',
-      logo: this.URL_PROJECTS_LOGOS + '/wedding-light.webp'
-    },
-    {
-      name: 'Mytho',
-      logo: this.URL_PROJECTS_LOGOS + '/mytho.webp'
-    },
-    {
-      name: 'Yourney',
-      logo: this.URL_PROJECTS_LOGOS + '/yourney.webp'
-    },
-    {
-      name: 'Madrid',
-      logo: this.URL_PROJECTS_LOGOS + '/madrid.webp'
-    },
-    {
-      name: 'Sit&Com',
-      logo: this.URL_PROJECTS_LOGOS + '/sitcom.webp'
-    },
-    {
-      name: 'RFEF',
-      logo: this.URL_PROJECTS_LOGOS + '/rfef.webp'
-    },
-    {
-      name: 'My Thot',
-      logo: this.URL_PROJECTS_LOGOS + '/mythot.webp'
-    },
-  ]
-
-  public hideSideMenu: boolean = false
+      {
+        name: 'Goodtravels',
+        logo: this.URL_PROJECTS_LOGOS + '/goodtravels.webp'
+      },
+      {
+        name: 'Jot-It',
+        logo: this.URL_PROJECTS_LOGOS + '/jotit.webp'
+      },
+    // {
+      //   name: 'Boda J&M',
+      //   logo: this.URL_PROJECTS_LOGOS + '/wedding-light.webp'
+      // },
+      {
+        name: 'Mytho',
+        logo: this.URL_PROJECTS_LOGOS + '/mytho.webp'
+      },
+      {
+        name: 'Yourney',
+        logo: this.URL_PROJECTS_LOGOS + '/yourney.webp'
+      },
+      {
+        name: 'Madrid Comida',
+        logo: this.URL_PROJECTS_LOGOS + '/madrid.webp'
+      },
+      {
+        name: 'Sit&Com',
+        logo: this.URL_PROJECTS_LOGOS + '/sitcom.webp'
+      },
+      {
+        name: 'RFEF',
+        logo: this.URL_PROJECTS_LOGOS + '/rfef.webp'
+      },
+      {
+        name: 'My Thot',
+        logo: this.URL_PROJECTS_LOGOS + '/mythot.webp'
+      },
+      {
+        name: 'Mi logo',
+        logo: this.URL_PROJECTS_LOGOS + '/mylogo.webp'
+      },
+    ]
+    
+    public hideSideMenu: boolean = false
   public isMobile: boolean = false
 
   public device: string = 'mobile'
