@@ -16,6 +16,13 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'Goodtravels',
+      tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/visual-light.webp'],
+      description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarollado en React, Express.js y MongoDB",
+      image: this.URL_PROJECTS + '/goodtravels.webp',
+      link: 'https://goodtravels-app.web.app/'
+    },
+    {
       name: 'SQLibrary',
       tools: [this.URL_LOGOS + '/php-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/tailwind-light.webp', this.URL_LOGOS + '/mysql-light.webp', this.URL_LOGOS + '/visual-light.webp'],
       description: "Sistema CRUD para gestión de libros, desarrollado en PHP, MySQL y usando Tailwind para los estilos",

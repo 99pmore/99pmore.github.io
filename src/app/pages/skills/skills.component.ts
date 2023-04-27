@@ -32,6 +32,10 @@ export class SkillsComponent implements OnInit {
       name: 'TypeScript'
     },
     {
+      logo: '../../../assets/img/logos/node-light.webp',
+      name: 'Node.js'
+    },
+    {
       logo: '../../../assets/img/logos/php-light.webp',
       name: 'PHP'
     },
@@ -76,7 +80,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       logo: '../../../assets/img/logos/mongo-light.webp',
-      name: 'Mongo'
+      name: 'MongoDB'
     },
     {
       logo: '../../../assets/img/logos/firebase-light.webp',
