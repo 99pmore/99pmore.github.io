@@ -4,11 +4,11 @@ import { BlurService } from 'src/app/services/blur.service';
 import { BreakpointService } from 'src/app/services/breakpoint.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-curriculum',
+  templateUrl: './curriculum.component.html',
+  styleUrls: ['./curriculum.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class CurriculumComponent implements OnInit {
 
   public schools: Card[] = [
     {

@@ -45,45 +45,6 @@
             <div class="profile-img" data-aos="zoom-out-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true"></div>
         </section>
 
-        <section>
-            <p class="open-tag">Formación</p>
-            <div class="content parent" data-aos="fade-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
-                <app-card *ngFor="let school of schools" [school]="school" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()" class="child"></app-card>
-            </div>
-            <p class="close-tag">Formación</p>
-        </section>
-
-        <section>
-            <p class="open-tag">Experiencia</p>
-            <div class="content parent" data-aos="fade-right" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
-                <app-card *ngFor="let company of companies" [company]="company" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()" class="child"></app-card>
-            </div>
-            <p class="close-tag">Experiencia</p>
-        </section>
-
-        <section>
-            <p class="open-tag">Certificaciones y cursos</p>
-            <div class="content parent" data-aos="fade-left" data-aos-duration="750" data-aos-offset="250" data-aos-once="true">
-                <app-card *ngFor="let certification of certifications" [certification]="certification" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()" class="child"></app-card>
-            </div>
-            <p class="close-tag">Certificaciones y cursos</p>
-        </section>
-
-        <section>
-            <p class="open-tag">Idiomas</p>
-            <div class="lang-content parent" data-aos="fade-right" data-aos-duration="750" data-aos-once="true">
-                <div class="lang child" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()">
-                    <h2>Español</h2>
-                    <h3>Nativo</h3>
-                </div>
-                <div class="lang child" (mouseenter)="blurSiblings()" (mouseleave)="clearSiblings()">
-                    <h2>Inglés</h2>
-                    <h3>Nivel B2</h3>
-                </div>
-            </div>
-            <p class="close-tag">Idiomas</p>
-        </section>
-
         <p class="close-tag">Sobre mí</p>
     </section>
 </main>

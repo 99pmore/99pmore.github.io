@@ -1,0 +1,96 @@
+@import "../../../styles.scss";
+
+main {
+ 	overflow: hidden;
+    // padding: 5% 10%;
+    padding: 100px 60px 100px 80px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 250px;
+
+    section {
+        section {
+            padding: 40px 0 40px 60px;
+
+            .content {
+                padding: 40px 0 40px 60px;
+
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: flex-start;
+
+                @include blur-siblings();
+            }
+
+            .lang-content {
+                padding: 40px 0 40px 60px;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                flex-wrap: wrap;
+                gap: 30px;
+
+                @include blur-siblings();
+
+                .lang {
+                    @include glassmorphism();
+                    color: white;
+                    border-radius: 25px;
+                    cursor: default;
+
+                    height: 150px;
+                    width: 200px;
+                    padding: 40px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        box-shadow: 0 0 16px rgba(255, 192, 203, 0.75);
+                        transform: translateY(-20px);
+                        filter: blur(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.is-mobile {
+    padding: 60px 20px;
+    margin-left: 0;
+
+    .open-tag, .close-tag {
+        font-size: 1.15rem;
+    }
+
+    section {
+        section {
+            padding: 30px 0;
+
+            .content {
+                padding: 20px 0;
+
+                justify-content: center;
+            }
+
+            .lang-content {
+                padding: 20px 0;
+
+                justify-content: center;
+            }
+        }
+    }
+}

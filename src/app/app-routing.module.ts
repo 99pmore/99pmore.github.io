@@ -6,10 +6,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 
 const routes: Routes = [
   { path: '', component: HeaderComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'curriculum', component: CurriculumComponent},
   { path: 'skills', component: SkillsComponent},
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'error-404', component: Error404Component},

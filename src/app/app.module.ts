@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SMenuComponent } from './components/s-menu/s-menu.component';
 import { SButtonComponent } from './components/s-button/s-button.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CurriculumComponent } from './pages/curriculum/curriculum.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SMenuComponent,
     SButtonComponent,
     FooterComponent,
+    CurriculumComponent,
   ],
   imports: [
     BrowserModule,
