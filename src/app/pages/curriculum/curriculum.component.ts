@@ -33,9 +33,15 @@ export class CurriculumComponent implements OnInit {
 
   public companies: Card[] = [
     {
+      date: 'jul. 2023 - Actualidad',
+      title: 'Tech Architecture',
+      location: 'Accenture',
+      logo: '../../../assets/img/inst-logos/accenture-light.webp'
+    },
+    {
       date: 'sep. 2021 - mar. 2022',
       title: 'Prácticas en Desarrollo Móvil',
-      location: 'INETUM España',
+      location: 'Inetum',
       logo: '../../../assets/img/inst-logos/inetum-light.webp'
     }
   ]
