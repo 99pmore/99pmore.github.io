@@ -16,11 +16,18 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
+      name: 'Readopia (En desarrollo)',
+      tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
+      description: "(TFM) Aplicación web de gestión de lecturas y consulta de información sobre libros desde la API Google Libros, desarrollada en Angular 16 y con almacenamiento y autenticación en Firebase",
+      image: this.URL_PROJECTS + '/readopia.webp',
+      // link: 'https://itsreadopia-app.web.app/'
+    },
+    {
       name: 'Goodtravels (En desarrollo)',
       tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/visual-light.webp'],
       description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarrollado en React, Express.js y MongoDB",
       image: this.URL_PROJECTS + '/goodtravels.webp',
-      link: 'https://goodtravels-app.web.app/'
+      // link: 'https://goodtravels-app.web.app/'
     },
     {
       name: 'SQLibrary',
