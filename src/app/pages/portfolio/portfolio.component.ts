@@ -96,6 +96,10 @@ export class PortfolioComponent implements OnInit {
 
   public logos: Logo[] = [
       {
+        name: 'Readopia',
+        logo: this.URL_PROJECTS_LOGOS + '/readopia.webp'
+      },
+      {
         name: 'Goodtravels',
         logo: this.URL_PROJECTS_LOGOS + '/goodtravels.webp'
       },
