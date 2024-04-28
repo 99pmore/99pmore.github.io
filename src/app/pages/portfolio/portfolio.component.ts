@@ -16,11 +16,11 @@ export class PortfolioComponent implements OnInit {
 
   public projects: Project[] = [
     {
-      name: 'Readopia (En desarrollo)',
+      name: 'Readopia',
       tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: "(TFM) Aplicación web de gestión de lecturas y consulta de información sobre libros desde la API Google Libros, desarrollada en Angular 16 y con almacenamiento y autenticación en Firebase",
+      description: "(TFM) Aplicación web de gestión de lecturas y consulta de información sobre libros, desarrollada en Angular 16 y con los servicios de Firebase",
       image: this.URL_PROJECTS + '/readopia.webp',
-      // link: 'https://itsreadopia-app.web.app/'
+      link: 'https://itsreadopia-app.web.app/'
     },
     {
       name: 'Goodtravels (En desarrollo)',
@@ -46,7 +46,7 @@ export class PortfolioComponent implements OnInit {
     {
       name: 'Jot-It',
       tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: "App web para gestión de listas y notas, desarrollada en React y con almacenamiento en Firebase",
+      description: "Aplicación web para gestión de listas y notas, desarrollada en React y con almacenamiento en Firebase",
       image: this.URL_PROJECTS + '/jotit.webp',
       link: 'https://notes-and-lists-app.web.app/'
     },
@@ -64,13 +64,6 @@ export class PortfolioComponent implements OnInit {
       image: this.URL_PROJECTS + '/got.webp',
       link: 'https://api-got.web.app/'
     },
-    // {
-    //   name: 'Mi web portfolio',
-    //   tools: [ this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-    //   description: 'Web currículum y portfolio, desarrollada en Angular',
-    //   image: this.URL_PROJECTS + '/miweb-angular.webp',
-    //   link: 'https://pablo-moreno-martin.web.app/'
-    // },
     {
       name: 'Mytho',
       tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
@@ -78,20 +71,13 @@ export class PortfolioComponent implements OnInit {
       image: this.URL_PROJECTS + '/mytho.webp',
       link: 'https://99pmore.github.io/Mytho/'
     },
-    // {
-    //   name: 'CV Web (desactualizado)',
-    //   tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-    //   description: 'Web currículum y portfolio, desarrollado en HTML y SCSS',
-    //   image: this.URL_PROJECTS + '/miweb.webp',
-    //   link: 'https://99pmore.github.io/CV_Web/'
-    // },
     {
       name: 'Yourney',
       tools: [ this.URL_LOGOS + '/swift-light.webp', this.URL_LOGOS + '/java-light.webp', this.URL_LOGOS + '/xcode-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/spring-light.webp', this.URL_LOGOS + '/mongo-light.webp'],
       description: '(TFG) Aplicación de gestión de viajes para iOS, desarrollado en Swift para el Front y en Java Spring Boot para el Back',
       image: this.URL_PROJECTS + '/yourney.webp',
       link: 'https://github.com/99pmore/Yourney'
-    },
+    }
   ]
 
   public logos: Logo[] = [
@@ -107,10 +93,6 @@ export class PortfolioComponent implements OnInit {
         name: 'Jot-It',
         logo: this.URL_PROJECTS_LOGOS + '/jotit.webp'
       },
-    // {
-      //   name: 'Boda J&M',
-      //   logo: this.URL_PROJECTS_LOGOS + '/wedding-light.webp'
-      // },
       {
         name: 'Mytho',
         logo: this.URL_PROJECTS_LOGOS + '/mytho.webp'
@@ -141,7 +123,7 @@ export class PortfolioComponent implements OnInit {
       },
     ]
     
-    public hideSideMenu: boolean = false
+  public hideSideMenu: boolean = false
   public isMobile: boolean = false
 
   public device: string = 'mobile'

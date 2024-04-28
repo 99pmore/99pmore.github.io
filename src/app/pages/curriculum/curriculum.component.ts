@@ -12,7 +12,7 @@ export class CurriculumComponent implements OnInit {
 
   public schools: Card[] = [
     {
-      date: 'may. 2022 - actualidad',
+      date: 'may. 2022 - mar. 2024',
       title: 'Máster en Desarrollo Web FullStack',
       location: 'Escuela Internacional de Posgrados y UEMC',
       logo: '../../../assets/img/inst-logos/eip-light.webp'
@@ -34,7 +34,7 @@ export class CurriculumComponent implements OnInit {
   public companies: Card[] = [
     {
       date: 'jul. 2023 - Actualidad',
-      title: 'Tech Architecture',
+      title: 'Arquitectura técnica',
       location: 'Accenture',
       logo: '../../../assets/img/inst-logos/accenture-light.webp'
     },

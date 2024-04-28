@@ -36,21 +36,17 @@ export class SkillsComponent implements OnInit {
       name: 'Node.js'
     },
     {
-      logo: '../../../assets/img/logos/php-light.webp',
-      name: 'PHP'
-    },
-    {
       logo: '../../../assets/img/logos/java-light.webp',
       name: 'Java'
     },
     {
-      logo: '../../../assets/img/logos/swift-light.webp',
-      name: 'Swift'
+      logo: '../../../assets/img/logos/php-light.webp',
+      name: 'PHP'
     },
-    {
-      logo: '../../../assets/img/logos/c-light.webp',
-      name: 'C'
-    },
+    // {
+    //   logo: '../../../assets/img/logos/swift-light.webp',
+    //   name: 'Swift'
+    // },
   ]
 
   public tools: Skill[] = [
@@ -109,10 +105,10 @@ export class SkillsComponent implements OnInit {
       logo: '../../../assets/img/logos/postman-light.webp',
       name: 'PostMan'
     },
-    {
-      logo: '../../../assets/img/logos/netbeans-light.webp',
-      name: 'NetBeans'
-    },
+    // {
+    //   logo: '../../../assets/img/logos/netbeans-light.webp',
+    //   name: 'NetBeans'
+    // },
     {
       logo: '../../../assets/img/logos/justinmind-light.webp',
       name: 'Just in Mind'
