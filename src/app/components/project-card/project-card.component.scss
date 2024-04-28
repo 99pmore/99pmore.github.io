@@ -64,7 +64,7 @@
         height: 100%;
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-direction: column;
         gap: 20px;
 
@@ -82,7 +82,7 @@
             height: 30px;
 
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
 
             img {
