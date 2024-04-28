@@ -27,7 +27,7 @@
 }
 
 body {
-    background: #334;
+    background: #4242a8;
     background-attachment: fixed;
     color: $dark-grey;
 
@@ -39,7 +39,7 @@ body {
     @include create-comment-tag();
 
     &::-webkit-scrollbar {
-        background: #334;
+        background: #4242a8;
         width: 10px;
     }
 
