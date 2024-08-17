@@ -20,7 +20,7 @@ export class PortfolioComponent implements OnInit {
       tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/firebase-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
       description: "(TFM) Aplicación web de gestión de lecturas y consulta de información sobre libros, desarrollada en Angular 16 y con los servicios de Firebase",
       image: this.URL_PROJECTS + '/readopia.webp',
-      link: 'https://itsreadopia-app.web.app/'
+      link: 'https://itsreadopia.web.app/'
     },
     {
       name: 'Goodtravels (En desarrollo)',

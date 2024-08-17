@@ -27,9 +27,9 @@
 }
 
 body {
-    background: #4242a8;
+    background: #000;
     background-attachment: fixed;
-    color: $dark-grey;
+    color: #fff;
 
     font-family: $font-text;
 
@@ -39,16 +39,16 @@ body {
     @include create-comment-tag();
 
     &::-webkit-scrollbar {
-        background: #4242a8;
+        background: #000;
         width: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: rgba(255, 192, 203, 0.75);
+        background: #00c2cbbf;
         border-radius: 6px;
 
         &:hover {
-            background: pink;
+            background: #00c2cb;
         }
     }
 }

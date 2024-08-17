@@ -4,7 +4,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 192, 203, 0.3);
+    border: 1px solid #00c2cb4d;
 }
 
 @mixin create-tag() {
@@ -12,7 +12,7 @@
         font-family: $font-tag; 
         font-size: 1.1rem;
         letter-spacing: 2px;
-        color: pink;
+        color: #00c2cb;
         cursor: default;
 
         &::after {
@@ -41,7 +41,7 @@
         font-family: $font-tag; 
         font-size: 1rem;
         letter-spacing: 2px;
-        color: rgba(255, 192, 203, 0.5);
+        color: #00c2cb80;
         cursor: default;
 
         &::before {
