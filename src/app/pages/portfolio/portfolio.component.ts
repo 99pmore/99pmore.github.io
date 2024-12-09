@@ -22,20 +22,20 @@ export class PortfolioComponent implements OnInit {
       image: this.URL_PROJECTS + '/readopia.webp',
       link: 'https://itsreadopia.web.app/'
     },
-    {
-      name: 'Goodtravels (En desarrollo)',
-      tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/visual-light.webp'],
-      description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarrollado en React, Express.js y MongoDB",
-      image: this.URL_PROJECTS + '/goodtravels.webp',
-      // link: 'https://goodtravels-app.web.app/'
-    },
-    {
-      name: 'SQLibrary',
-      tools: [this.URL_LOGOS + '/php-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/tailwind-light.webp', this.URL_LOGOS + '/mysql-light.webp', this.URL_LOGOS + '/visual-light.webp'],
-      description: "Sistema CRUD para gestión de libros, desarrollado en PHP, MySQL y usando Tailwind para los estilos",
-      image: this.URL_PROJECTS + '/sqlibrary.webp',
-      link: 'https://github.com/99pmore/SQLibrary'
-    },
+    // {
+    //   name: 'Goodtravels (En desarrollo)',
+    //   tools: [this.URL_LOGOS + '/react-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/node-light.webp', this.URL_LOGOS + '/mongo-light.webp', this.URL_LOGOS + '/visual-light.webp'],
+    //   description: "Sistema CRUD para añadir países a listas de visitados y países por visitar, desarrollado en React, Express.js y MongoDB",
+    //   image: this.URL_PROJECTS + '/goodtravels.webp',
+    //   // link: 'https://goodtravels-app.web.app/'
+    // },
+    // {
+    //   name: 'SQLibrary',
+    //   tools: [this.URL_LOGOS + '/php-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/tailwind-light.webp', this.URL_LOGOS + '/mysql-light.webp', this.URL_LOGOS + '/visual-light.webp'],
+    //   description: "Sistema CRUD para gestión de libros, desarrollado en PHP, MySQL y usando Tailwind para los estilos",
+    //   image: this.URL_PROJECTS + '/sqlibrary.webp',
+    //   link: 'https://github.com/99pmore/SQLibrary'
+    // },
     {
       name: 'Flags quiz game',
       tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
@@ -57,13 +57,13 @@ export class PortfolioComponent implements OnInit {
       image: this.URL_PROJECTS + '/harrypotter.webp',
       link: 'https://api-harrypotter.web.app/'
     },
-    {
-      name: 'GoT API',
-      tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
-      description: "Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API 'api.got.show', desarrollada en Angular",
-      image: this.URL_PROJECTS + '/got.webp',
-      link: 'https://api-got.web.app/'
-    },
+    // {
+    //   name: 'GoT API',
+    //   tools: [this.URL_LOGOS + '/angular-light.webp', this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
+    //   description: "Web de información sobre Juego de Tronos, realizando peticiones HTTP a la API 'api.got.show', desarrollada en Angular",
+    //   image: this.URL_PROJECTS + '/got.webp',
+    //   link: 'https://api-got.web.app/'
+    // },
     {
       name: 'Mytho',
       tools: [ this.URL_LOGOS + '/html-light.webp', this.URL_LOGOS + '/sass-light.webp', this.URL_LOGOS + '/visual-light.webp', this.URL_LOGOS + '/git-light.webp'],
